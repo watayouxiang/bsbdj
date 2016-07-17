@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB9DC9CB1D3B5C53001EF334 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9C81D3B5C53001EF334 /* AppDelegate.m */; };
+		BB9DC9CC1D3B5C53001EF334 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9CA1D3B5C53001EF334 /* ViewController.m */; };
 		BBC134F01D3B5565007C052B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC134EF1D3B5565007C052B /* main.m */; };
-		BBC134F31D3B5565007C052B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC134F21D3B5565007C052B /* AppDelegate.m */; };
-		BBC134F61D3B5565007C052B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC134F51D3B5565007C052B /* ViewController.m */; };
 		BBC134FB1D3B5565007C052B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC134FA1D3B5565007C052B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB9DC9C71D3B5C53001EF334 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = bsbdj/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		BB9DC9C81D3B5C53001EF334 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = bsbdj/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		BB9DC9C91D3B5C53001EF334 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = bsbdj/ViewController.h; sourceTree = SOURCE_ROOT; };
+		BB9DC9CA1D3B5C53001EF334 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = bsbdj/ViewController.m; sourceTree = SOURCE_ROOT; };
 		BBC134EB1D3B5565007C052B /* bsbdj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bsbdj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC134EF1D3B5565007C052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BBC134F11D3B5565007C052B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
-		BBC134F21D3B5565007C052B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
-		BBC134F41D3B5565007C052B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
-		BBC134F51D3B5565007C052B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
 		BBC134FA1D3B5565007C052B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC134FF1D3B5565007C052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,10 +112,10 @@
 		BB9DC9BB1D3B5A5A001EF334 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				BBC134F11D3B5565007C052B /* AppDelegate.h */,
-				BBC134F21D3B5565007C052B /* AppDelegate.m */,
-				BBC134F41D3B5565007C052B /* ViewController.h */,
-				BBC134F51D3B5565007C052B /* ViewController.m */,
+				BB9DC9C71D3B5C53001EF334 /* AppDelegate.h */,
+				BB9DC9C81D3B5C53001EF334 /* AppDelegate.m */,
+				BB9DC9C91D3B5C53001EF334 /* ViewController.h */,
+				BB9DC9CA1D3B5C53001EF334 /* ViewController.m */,
 				BB9DC9BC1D3B5A5A001EF334 /* Controller */,
 				BB9DC9BD1D3B5A5A001EF334 /* Model */,
 				BB9DC9BE1D3B5A5A001EF334 /* View */,
@@ -310,9 +310,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBC134F61D3B5565007C052B /* ViewController.m in Sources */,
-				BBC134F31D3B5565007C052B /* AppDelegate.m in Sources */,
+				BB9DC9CB1D3B5C53001EF334 /* AppDelegate.m in Sources */,
 				BBC134F01D3B5565007C052B /* main.m in Sources */,
+				BB9DC9CC1D3B5C53001EF334 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
