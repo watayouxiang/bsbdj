@@ -35,6 +35,173 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB9DC9B21D3B5A5A001EF334 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BB9DC9B31D3B5A5A001EF334 /* Essence */,
+				BB9DC9B71D3B5A5A001EF334 /* FriendTrends */,
+				BB9DC9BB1D3B5A5A001EF334 /* Main */,
+				BB9DC9BF1D3B5A5A001EF334 /* Me */,
+				BB9DC9C31D3B5A5A001EF334 /* New */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BB9DC9B31D3B5A5A001EF334 /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				BB9DC9B41D3B5A5A001EF334 /* Controller */,
+				BB9DC9B51D3B5A5A001EF334 /* Model */,
+				BB9DC9B61D3B5A5A001EF334 /* View */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		BB9DC9B41D3B5A5A001EF334 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB9DC9B51D3B5A5A001EF334 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB9DC9B61D3B5A5A001EF334 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB9DC9B71D3B5A5A001EF334 /* FriendTrends */ = {
+			isa = PBXGroup;
+			children = (
+				BB9DC9B81D3B5A5A001EF334 /* Controller */,
+				BB9DC9B91D3B5A5A001EF334 /* Model */,
+				BB9DC9BA1D3B5A5A001EF334 /* View */,
+			);
+			path = FriendTrends;
+			sourceTree = "<group>";
+		};
+		BB9DC9B81D3B5A5A001EF334 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB9DC9B91D3B5A5A001EF334 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB9DC9BA1D3B5A5A001EF334 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB9DC9BB1D3B5A5A001EF334 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BB9DC9BC1D3B5A5A001EF334 /* Controller */,
+				BB9DC9BD1D3B5A5A001EF334 /* Model */,
+				BB9DC9BE1D3B5A5A001EF334 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BB9DC9BC1D3B5A5A001EF334 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB9DC9BD1D3B5A5A001EF334 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB9DC9BE1D3B5A5A001EF334 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB9DC9BF1D3B5A5A001EF334 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				BB9DC9C01D3B5A5A001EF334 /* Controller */,
+				BB9DC9C11D3B5A5A001EF334 /* Model */,
+				BB9DC9C21D3B5A5A001EF334 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		BB9DC9C01D3B5A5A001EF334 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB9DC9C11D3B5A5A001EF334 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB9DC9C21D3B5A5A001EF334 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB9DC9C31D3B5A5A001EF334 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				BB9DC9C41D3B5A5A001EF334 /* Controller */,
+				BB9DC9C51D3B5A5A001EF334 /* Model */,
+				BB9DC9C61D3B5A5A001EF334 /* View */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		BB9DC9C41D3B5A5A001EF334 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB9DC9C51D3B5A5A001EF334 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB9DC9C61D3B5A5A001EF334 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BBC134E21D3B5565007C052B = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +221,7 @@
 		BBC134ED1D3B5565007C052B /* bsbdj */ = {
 			isa = PBXGroup;
 			children = (
+				BB9DC9B21D3B5A5A001EF334 /* Classes */,
 				BBC134F11D3B5565007C052B /* AppDelegate.h */,
 				BBC134F21D3B5565007C052B /* AppDelegate.m */,
 				BBC134F41D3B5565007C052B /* ViewController.h */,
