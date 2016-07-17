@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  bsbdj
+//
+//  Created by 王涛 on 16/7/17.
+//  Copyright © 2016年 wata. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+ttExtension.h"
+#import "UIBarButtonItem+ttExtension.h"
+
+#ifdef DEBUG
+#define ttLog(...) NSLog(__VA_ARGS__)
+#else
+#define ttLog(...)
+#endif
+
+#define ttLogFunc ttLog(@"%s", __func__)
+
+#define ttRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define ttGlobalBg ttRGBColor(223, 223, 223)
+
+#endif /* PrefixHeader_pch */

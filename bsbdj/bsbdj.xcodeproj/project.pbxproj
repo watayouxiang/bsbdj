@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		BB9DC9CB1D3B5C53001EF334 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9C81D3B5C53001EF334 /* AppDelegate.m */; };
 		BB9DC9CC1D3B5C53001EF334 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9CA1D3B5C53001EF334 /* ViewController.m */; };
+		BB9DC9D51D3B5E61001EF334 /* ttTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9D41D3B5E61001EF334 /* ttTabBarController.m */; };
+		BB9DC9D81D3B5EA8001EF334 /* ttNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9D71D3B5EA8001EF334 /* ttNavigationController.m */; };
+		BB9DC9DB1D3B5F0C001EF334 /* ttEssenceVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9DA1D3B5F0C001EF334 /* ttEssenceVc.m */; };
+		BB9DC9DE1D3B5F2C001EF334 /* ttFriendTrendsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9DD1D3B5F2C001EF334 /* ttFriendTrendsVc.m */; };
+		BB9DC9E11D3B5F44001EF334 /* ttNewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9E01D3B5F44001EF334 /* ttNewVc.m */; };
+		BB9DC9E41D3B5F52001EF334 /* ttMeVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9E31D3B5F52001EF334 /* ttMeVc.m */; };
+		BB9DC9E71D3B5FCE001EF334 /* ttTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9E61D3B5FCE001EF334 /* ttTabBar.m */; };
+		BB9DC9ED1D3B688D001EF334 /* UIBarButtonItem+ttExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9EA1D3B688D001EF334 /* UIBarButtonItem+ttExtension.m */; };
+		BB9DC9EE1D3B688D001EF334 /* UIView+ttExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DC9EC1D3B688D001EF334 /* UIView+ttExtension.m */; };
 		BBC134F01D3B5565007C052B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC134EF1D3B5565007C052B /* main.m */; };
 		BBC134FB1D3B5565007C052B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC134FA1D3B5565007C052B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -18,6 +27,25 @@
 		BB9DC9C81D3B5C53001EF334 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = bsbdj/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		BB9DC9C91D3B5C53001EF334 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = bsbdj/ViewController.h; sourceTree = SOURCE_ROOT; };
 		BB9DC9CA1D3B5C53001EF334 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = bsbdj/ViewController.m; sourceTree = SOURCE_ROOT; };
+		BB9DC9D31D3B5E61001EF334 /* ttTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttTabBarController.h; path = bsbdj/ttTabBarController.h; sourceTree = SOURCE_ROOT; };
+		BB9DC9D41D3B5E61001EF334 /* ttTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttTabBarController.m; path = bsbdj/ttTabBarController.m; sourceTree = SOURCE_ROOT; };
+		BB9DC9D61D3B5EA8001EF334 /* ttNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttNavigationController.h; path = bsbdj/ttNavigationController.h; sourceTree = SOURCE_ROOT; };
+		BB9DC9D71D3B5EA8001EF334 /* ttNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttNavigationController.m; path = bsbdj/ttNavigationController.m; sourceTree = SOURCE_ROOT; };
+		BB9DC9D91D3B5F0C001EF334 /* ttEssenceVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttEssenceVc.h; path = bsbdj/ttEssenceVc.h; sourceTree = SOURCE_ROOT; };
+		BB9DC9DA1D3B5F0C001EF334 /* ttEssenceVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttEssenceVc.m; path = bsbdj/ttEssenceVc.m; sourceTree = SOURCE_ROOT; };
+		BB9DC9DC1D3B5F2C001EF334 /* ttFriendTrendsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttFriendTrendsVc.h; path = bsbdj/ttFriendTrendsVc.h; sourceTree = SOURCE_ROOT; };
+		BB9DC9DD1D3B5F2C001EF334 /* ttFriendTrendsVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttFriendTrendsVc.m; path = bsbdj/ttFriendTrendsVc.m; sourceTree = SOURCE_ROOT; };
+		BB9DC9DF1D3B5F44001EF334 /* ttNewVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttNewVc.h; path = bsbdj/ttNewVc.h; sourceTree = SOURCE_ROOT; };
+		BB9DC9E01D3B5F44001EF334 /* ttNewVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttNewVc.m; path = bsbdj/ttNewVc.m; sourceTree = SOURCE_ROOT; };
+		BB9DC9E21D3B5F52001EF334 /* ttMeVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttMeVc.h; path = bsbdj/ttMeVc.h; sourceTree = SOURCE_ROOT; };
+		BB9DC9E31D3B5F52001EF334 /* ttMeVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttMeVc.m; path = bsbdj/ttMeVc.m; sourceTree = SOURCE_ROOT; };
+		BB9DC9E51D3B5FCE001EF334 /* ttTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttTabBar.h; path = bsbdj/ttTabBar.h; sourceTree = SOURCE_ROOT; };
+		BB9DC9E61D3B5FCE001EF334 /* ttTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttTabBar.m; path = bsbdj/ttTabBar.m; sourceTree = SOURCE_ROOT; };
+		BB9DC9E91D3B688D001EF334 /* UIBarButtonItem+ttExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ttExtension.h"; sourceTree = SOURCE_ROOT; };
+		BB9DC9EA1D3B688D001EF334 /* UIBarButtonItem+ttExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ttExtension.m"; sourceTree = SOURCE_ROOT; };
+		BB9DC9EB1D3B688D001EF334 /* UIView+ttExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ttExtension.h"; sourceTree = SOURCE_ROOT; };
+		BB9DC9EC1D3B688D001EF334 /* UIView+ttExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ttExtension.m"; sourceTree = SOURCE_ROOT; };
+		BB9DC9F11D3B695F001EF334 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = bsbdj/PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
 		BBC134EB1D3B5565007C052B /* bsbdj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bsbdj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC134EF1D3B5565007C052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBC134FA1D3B5565007C052B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,11 +66,11 @@
 		BB9DC9B21D3B5A5A001EF334 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BB9DC9B31D3B5A5A001EF334 /* Essence */,
-				BB9DC9B71D3B5A5A001EF334 /* FriendTrends */,
 				BB9DC9BB1D3B5A5A001EF334 /* Main */,
-				BB9DC9BF1D3B5A5A001EF334 /* Me */,
+				BB9DC9B31D3B5A5A001EF334 /* Essence */,
 				BB9DC9C31D3B5A5A001EF334 /* New */,
+				BB9DC9B71D3B5A5A001EF334 /* FriendTrends */,
+				BB9DC9BF1D3B5A5A001EF334 /* Me */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -60,6 +88,8 @@
 		BB9DC9B41D3B5A5A001EF334 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BB9DC9D91D3B5F0C001EF334 /* ttEssenceVc.h */,
+				BB9DC9DA1D3B5F0C001EF334 /* ttEssenceVc.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,6 +121,8 @@
 		BB9DC9B81D3B5A5A001EF334 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BB9DC9DC1D3B5F2C001EF334 /* ttFriendTrendsVc.h */,
+				BB9DC9DD1D3B5F2C001EF334 /* ttFriendTrendsVc.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +148,8 @@
 				BB9DC9C81D3B5C53001EF334 /* AppDelegate.m */,
 				BB9DC9C91D3B5C53001EF334 /* ViewController.h */,
 				BB9DC9CA1D3B5C53001EF334 /* ViewController.m */,
+				BB9DC9F11D3B695F001EF334 /* PrefixHeader.pch */,
+				BB9DC9E81D3B686C001EF334 /* Category */,
 				BB9DC9BC1D3B5A5A001EF334 /* Controller */,
 				BB9DC9BD1D3B5A5A001EF334 /* Model */,
 				BB9DC9BE1D3B5A5A001EF334 /* View */,
@@ -126,6 +160,10 @@
 		BB9DC9BC1D3B5A5A001EF334 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BB9DC9D31D3B5E61001EF334 /* ttTabBarController.h */,
+				BB9DC9D41D3B5E61001EF334 /* ttTabBarController.m */,
+				BB9DC9D61D3B5EA8001EF334 /* ttNavigationController.h */,
+				BB9DC9D71D3B5EA8001EF334 /* ttNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +178,8 @@
 		BB9DC9BE1D3B5A5A001EF334 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BB9DC9E51D3B5FCE001EF334 /* ttTabBar.h */,
+				BB9DC9E61D3B5FCE001EF334 /* ttTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +197,8 @@
 		BB9DC9C01D3B5A5A001EF334 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BB9DC9E21D3B5F52001EF334 /* ttMeVc.h */,
+				BB9DC9E31D3B5F52001EF334 /* ttMeVc.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +230,8 @@
 		BB9DC9C41D3B5A5A001EF334 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BB9DC9DF1D3B5F44001EF334 /* ttNewVc.h */,
+				BB9DC9E01D3B5F44001EF334 /* ttNewVc.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,6 +248,17 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BB9DC9E81D3B686C001EF334 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BB9DC9E91D3B688D001EF334 /* UIBarButtonItem+ttExtension.h */,
+				BB9DC9EA1D3B688D001EF334 /* UIBarButtonItem+ttExtension.m */,
+				BB9DC9EB1D3B688D001EF334 /* UIView+ttExtension.h */,
+				BB9DC9EC1D3B688D001EF334 /* UIView+ttExtension.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 		BBC134E21D3B5565007C052B = {
@@ -267,6 +322,7 @@
 		BBC134E31D3B5565007C052B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = tt;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = wata;
 				TargetAttributes = {
@@ -310,9 +366,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB9DC9E41D3B5F52001EF334 /* ttMeVc.m in Sources */,
+				BB9DC9EE1D3B688D001EF334 /* UIView+ttExtension.m in Sources */,
+				BB9DC9D81D3B5EA8001EF334 /* ttNavigationController.m in Sources */,
 				BB9DC9CB1D3B5C53001EF334 /* AppDelegate.m in Sources */,
 				BBC134F01D3B5565007C052B /* main.m in Sources */,
 				BB9DC9CC1D3B5C53001EF334 /* ViewController.m in Sources */,
+				BB9DC9E71D3B5FCE001EF334 /* ttTabBar.m in Sources */,
+				BB9DC9DE1D3B5F2C001EF334 /* ttFriendTrendsVc.m in Sources */,
+				BB9DC9D51D3B5E61001EF334 /* ttTabBarController.m in Sources */,
+				BB9DC9DB1D3B5F0C001EF334 /* ttEssenceVc.m in Sources */,
+				BB9DC9ED1D3B688D001EF334 /* UIBarButtonItem+ttExtension.m in Sources */,
+				BB9DC9E11D3B5F44001EF334 /* ttNewVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +411,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = ./bsbdj/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -388,6 +454,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = ./bsbdj/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
