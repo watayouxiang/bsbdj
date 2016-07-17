@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ttRecommendVc.h
 //  bsbdj
 //
 //  Created by 王涛 on 16/7/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ttRecommendVc : UIViewController
 
 @end
-

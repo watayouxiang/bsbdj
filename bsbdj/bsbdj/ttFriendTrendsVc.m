@@ -7,6 +7,7 @@
 //
 
 #import "ttFriendTrendsVc.h"
+#import "ttRecommendVc.h"
 
 @interface ttFriendTrendsVc ()
 
@@ -18,21 +19,13 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = ttGlobalBg;
+    self.navigationItem.title = @"我的关注";
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsClick)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)friendsClick {
+    ttRecommendVc *vc = [[ttRecommendVc alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
