@@ -301,6 +301,7 @@
 				BBC135041D3B5565007C052B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
