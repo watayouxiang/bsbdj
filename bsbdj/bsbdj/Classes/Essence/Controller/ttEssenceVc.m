@@ -7,6 +7,7 @@
 //
 
 #import "ttEssenceVc.h"
+#import "ttRecommendTagsVc.h"
 
 @interface ttEssenceVc ()
 
@@ -29,7 +30,8 @@
 }
 
 - (void)tagClick{
-    ttLogFunc;
+    ttRecommendTagsVc *tags = [[ttRecommendTagsVc alloc] init];
+    [self.navigationController pushViewController:tags animated:YES];
 }
 
 @end

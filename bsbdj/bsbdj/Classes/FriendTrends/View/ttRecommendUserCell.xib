@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ttRecommendUserCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="user" rowHeight="84" id="KGk-i7-Jjw" customClass="ttRecommendUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="84"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="371" height="83.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KBG-IB-AC6">
+                        <rect key="frame" x="10" y="17" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Whv-i9-ErE"/>
+                            <constraint firstAttribute="width" constant="50" id="Ygw-Af-65w"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWA-Vz-BmA">
+                        <rect key="frame" x="70" y="50" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHz-G5-leF">
+                        <rect key="frame" x="70" y="17" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlN-W4-nr3">
+                        <rect key="frame" x="310" y="29" width="51" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="+ 关注" backgroundImage="FollowBtnBg">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="FollowBtnClickBgmageBackground">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YHz-G5-leF" firstAttribute="top" secondItem="KBG-IB-AC6" secondAttribute="top" id="2CQ-Nx-p7y"/>
+                    <constraint firstItem="KBG-IB-AC6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4iI-wx-Y92"/>
+                    <constraint firstItem="KBG-IB-AC6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Bez-rY-4A2"/>
+                    <constraint firstItem="KBG-IB-AC6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SYo-Dt-nsh"/>
+                    <constraint firstItem="IlN-W4-nr3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aOb-o3-puv"/>
+                    <constraint firstItem="vWA-Vz-BmA" firstAttribute="leading" secondItem="KBG-IB-AC6" secondAttribute="trailing" constant="10" id="d8r-Y5-ozM"/>
+                    <constraint firstItem="YHz-G5-leF" firstAttribute="leading" secondItem="KBG-IB-AC6" secondAttribute="trailing" constant="10" id="dwD-EX-uZQ"/>
+                    <constraint firstAttribute="trailing" secondItem="IlN-W4-nr3" secondAttribute="trailing" constant="10" id="q6Q-qK-r5I"/>
+                    <constraint firstItem="vWA-Vz-BmA" firstAttribute="bottom" secondItem="KBG-IB-AC6" secondAttribute="bottom" id="vfd-rr-hbN"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="fansCountLabel" destination="vWA-Vz-BmA" id="4Sh-o9-CVi"/>
+                <outlet property="headerImageView" destination="KBG-IB-AC6" id="OKD-d0-i3d"/>
+                <outlet property="screenNameLabel" destination="YHz-G5-leF" id="oPJ-4t-ef0"/>
+            </connections>
+            <point key="canvasLocation" x="311.5" y="273"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="FollowBtnBg" width="51" height="25"/>
+        <image name="FollowBtnClickBgmageBackground" width="51" height="25"/>
+    </resources>
 </document>

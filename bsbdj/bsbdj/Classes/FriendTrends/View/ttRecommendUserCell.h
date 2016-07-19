@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ttRecommendUser;
 
 @interface ttRecommendUserCell : UITableViewCell
+/** 用户模型 */
+@property (nonatomic, strong) ttRecommendUser *user;
 
 @end

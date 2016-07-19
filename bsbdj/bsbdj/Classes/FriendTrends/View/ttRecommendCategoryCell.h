@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ttRecommendCategory;
 
 @interface ttRecommendCategoryCell : UITableViewCell
+
+/** 类别模型 */
+@property (nonatomic, strong) ttRecommendCategory *category;
 
 @end
