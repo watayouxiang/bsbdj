@@ -33,24 +33,24 @@ static NSString * const ttTagsId = @"tag";
 #pragma mark - 加载数据
 - (void)loadTags {
     
-    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     
     // 请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"tag_recommend";
     params[@"action"] = @"sub";
     params[@"c"] = @"topic";
-    
     // 发送请求
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
-
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        ttLog(@"NSProgress: %@", downloadProgress);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         ttLog(@"网络返回数据: %@", responseObject);
         
-        self.tags = [ttRecommendTag objectArrayWithKeyValuesArray:responseObject];
+        self.tags = [ttRecommendTag mj_objectArrayWithKeyValuesArray:responseObject];
         [self.tableView reloadData];
         
         [SVProgressHUD dismiss];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [SVProgressHUD showErrorWithStatus:@"加载标签数据失败!"];
     }];
     
