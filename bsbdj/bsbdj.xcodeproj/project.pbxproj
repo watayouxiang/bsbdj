@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0D2A2D1D3F644400C66D3D /* ttGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */; };
+		BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0D2A301D3F647500C66D3D /* ttGuideView.xib */; };
 		BB98E65D1D3D23CF00683672 /* ttEssenceVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E5ED1D3D23CF00683672 /* ttEssenceVc.m */; };
 		BB98E65E1D3D23CF00683672 /* ttFriendTrendsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E5F31D3D23CF00683672 /* ttFriendTrendsVc.m */; };
 		BB98E65F1D3D23CF00683672 /* ttFriendTrendsVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB98E5F41D3D23CF00683672 /* ttFriendTrendsVc.xib */; };
@@ -94,6 +96,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0D2A2B1D3F644400C66D3D /* ttGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttGuideView.h; sourceTree = "<group>"; };
+		BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttGuideView.m; sourceTree = "<group>"; };
+		BB0D2A301D3F647500C66D3D /* ttGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttGuideView.xib; sourceTree = "<group>"; };
 		BB98E5EC1D3D23CF00683672 /* ttEssenceVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttEssenceVc.h; sourceTree = "<group>"; };
 		BB98E5ED1D3D23CF00683672 /* ttEssenceVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttEssenceVc.m; sourceTree = "<group>"; };
 		BB98E5F21D3D23CF00683672 /* ttFriendTrendsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttFriendTrendsVc.h; sourceTree = "<group>"; };
@@ -508,6 +513,9 @@
 			children = (
 				BB98E64F1D3D23CF00683672 /* ttTabBar.h */,
 				BB98E6501D3D23CF00683672 /* ttTabBar.m */,
+				BB0D2A2B1D3F644400C66D3D /* ttGuideView.h */,
+				BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */,
+				BB0D2A301D3F647500C66D3D /* ttGuideView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -799,6 +807,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB98E6FD1D3E1ABC00683672 /* ttRecommendTagCell.xib in Resources */,
+				BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */,
 				BB98E6651D3D23CF00683672 /* ttRecommendCategoryCell.xib in Resources */,
 				BB98E6801D3D23CF00683672 /* SVProgressHUD.bundle in Resources */,
 				BB98E65F1D3D23CF00683672 /* ttFriendTrendsVc.xib in Resources */,
@@ -846,6 +855,7 @@
 				BB98E6F51D3E1A4200683672 /* ttRecommendTagsVc.m in Sources */,
 				BB98E6631D3D23CF00683672 /* ttRecommendUser.m in Sources */,
 				BB98E66C1D3D23CF00683672 /* AFURLResponseSerialization.m in Sources */,
+				BB0D2A2D1D3F644400C66D3D /* ttGuideView.m in Sources */,
 				BB98E67E1D3D23CF00683672 /* SVIndefiniteAnimatedView.m in Sources */,
 				BB98E6681D3D23CF00683672 /* AFHTTPSessionManager.m in Sources */,
 				BB98E6A81D3E0D9A00683672 /* MJProperty.m in Sources */,

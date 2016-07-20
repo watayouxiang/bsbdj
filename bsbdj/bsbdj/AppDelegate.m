@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ttTabBarController.h"
+#import "ttGuideView.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,10 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.rootViewController = [[ttTabBarController alloc] init];
     [self.window makeKeyAndVisible];
+    
+    // 显示推送引导
+    [ttGuideView show];
+    return YES;
     
     return YES;
 }
