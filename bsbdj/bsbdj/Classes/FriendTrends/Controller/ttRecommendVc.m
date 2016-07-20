@@ -59,11 +59,12 @@ static NSString * const ttUserId = @"user";
     params[@"c"] = @"subscribe";
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         
+        ttLog(@"网络返回数据: %@", responseObject);
+        
         // 隐藏指示器
         [SVProgressHUD dismiss];
         
         // 服务器返回的JSON数据
-        ttLog(@"======%@",responseObject);
         self.categories = [ttRecommendCategory objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
         // 刷新表格

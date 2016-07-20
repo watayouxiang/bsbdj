@@ -43,6 +43,9 @@ static NSString * const ttTagsId = @"tag";
     
     // 发送请求
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+
+        ttLog(@"网络返回数据: %@", responseObject);
+        
         self.tags = [ttRecommendTag objectArrayWithKeyValuesArray:responseObject];
         [self.tableView reloadData];
         
