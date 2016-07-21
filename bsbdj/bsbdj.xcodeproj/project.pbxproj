@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		BB0D2A2D1D3F644400C66D3D /* ttGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */; };
 		BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0D2A301D3F647500C66D3D /* ttGuideView.xib */; };
+		BB0D2A371D3F680D00C66D3D /* ttAllVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A361D3F680D00C66D3D /* ttAllVc.m */; };
+		BB0D2A3A1D3F682000C66D3D /* ttVideoVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A391D3F682000C66D3D /* ttVideoVc.m */; };
+		BB0D2A3D1D3F683100C66D3D /* ttVoiceVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A3C1D3F683100C66D3D /* ttVoiceVc.m */; };
+		BB0D2A401D3F684000C66D3D /* ttPictureVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A3F1D3F684000C66D3D /* ttPictureVc.m */; };
+		BB0D2A431D3F684E00C66D3D /* ttWordVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A421D3F684E00C66D3D /* ttWordVc.m */; };
 		BB98E65D1D3D23CF00683672 /* ttEssenceVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E5ED1D3D23CF00683672 /* ttEssenceVc.m */; };
 		BB98E65E1D3D23CF00683672 /* ttFriendTrendsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E5F31D3D23CF00683672 /* ttFriendTrendsVc.m */; };
 		BB98E65F1D3D23CF00683672 /* ttFriendTrendsVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB98E5F41D3D23CF00683672 /* ttFriendTrendsVc.xib */; };
@@ -99,6 +104,16 @@
 		BB0D2A2B1D3F644400C66D3D /* ttGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttGuideView.h; sourceTree = "<group>"; };
 		BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttGuideView.m; sourceTree = "<group>"; };
 		BB0D2A301D3F647500C66D3D /* ttGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttGuideView.xib; sourceTree = "<group>"; };
+		BB0D2A351D3F680D00C66D3D /* ttAllVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttAllVc.h; sourceTree = "<group>"; };
+		BB0D2A361D3F680D00C66D3D /* ttAllVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttAllVc.m; sourceTree = "<group>"; };
+		BB0D2A381D3F682000C66D3D /* ttVideoVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttVideoVc.h; sourceTree = "<group>"; };
+		BB0D2A391D3F682000C66D3D /* ttVideoVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttVideoVc.m; sourceTree = "<group>"; };
+		BB0D2A3B1D3F683100C66D3D /* ttVoiceVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttVoiceVc.h; sourceTree = "<group>"; };
+		BB0D2A3C1D3F683100C66D3D /* ttVoiceVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttVoiceVc.m; sourceTree = "<group>"; };
+		BB0D2A3E1D3F684000C66D3D /* ttPictureVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttPictureVc.h; sourceTree = "<group>"; };
+		BB0D2A3F1D3F684000C66D3D /* ttPictureVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttPictureVc.m; sourceTree = "<group>"; };
+		BB0D2A411D3F684E00C66D3D /* ttWordVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttWordVc.h; sourceTree = "<group>"; };
+		BB0D2A421D3F684E00C66D3D /* ttWordVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttWordVc.m; sourceTree = "<group>"; };
 		BB98E5EC1D3D23CF00683672 /* ttEssenceVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttEssenceVc.h; sourceTree = "<group>"; };
 		BB98E5ED1D3D23CF00683672 /* ttEssenceVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttEssenceVc.m; sourceTree = "<group>"; };
 		BB98E5F21D3D23CF00683672 /* ttFriendTrendsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttFriendTrendsVc.h; sourceTree = "<group>"; };
@@ -305,6 +320,16 @@
 			children = (
 				BB98E5EC1D3D23CF00683672 /* ttEssenceVc.h */,
 				BB98E5ED1D3D23CF00683672 /* ttEssenceVc.m */,
+				BB0D2A351D3F680D00C66D3D /* ttAllVc.h */,
+				BB0D2A361D3F680D00C66D3D /* ttAllVc.m */,
+				BB0D2A381D3F682000C66D3D /* ttVideoVc.h */,
+				BB0D2A391D3F682000C66D3D /* ttVideoVc.m */,
+				BB0D2A3B1D3F683100C66D3D /* ttVoiceVc.h */,
+				BB0D2A3C1D3F683100C66D3D /* ttVoiceVc.m */,
+				BB0D2A3E1D3F684000C66D3D /* ttPictureVc.h */,
+				BB0D2A3F1D3F684000C66D3D /* ttPictureVc.m */,
+				BB0D2A411D3F684E00C66D3D /* ttWordVc.h */,
+				BB0D2A421D3F684E00C66D3D /* ttWordVc.m */,
 				BB98E6F31D3E1A4200683672 /* ttRecommendTagsVc.h */,
 				BB98E6F41D3E1A4200683672 /* ttRecommendTagsVc.m */,
 			);
@@ -831,6 +856,7 @@
 				BB98E67A1D3D23CF00683672 /* UIImage+WebP.m in Sources */,
 				BB98E6E01D3E0DB200683672 /* MJRefreshBackFooter.m in Sources */,
 				BB98E6EE1D3E0DB200683672 /* MJRefreshConst.m in Sources */,
+				BB0D2A401D3F684000C66D3D /* ttPictureVc.m in Sources */,
 				BB98E6A71D3E0D9A00683672 /* MJFoundation.m in Sources */,
 				BB98E65E1D3D23CF00683672 /* ttFriendTrendsVc.m in Sources */,
 				BB98E6E61D3E0DB200683672 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -866,6 +892,7 @@
 				BB98E67F1D3D23CF00683672 /* SVProgressAnimatedView.m in Sources */,
 				BB98E66F1D3D23CF00683672 /* NSData+ImageContentType.m in Sources */,
 				BB98E6781D3D23CF00683672 /* UIImage+GIF.m in Sources */,
+				BB0D2A3A1D3F682000C66D3D /* ttVideoVc.m in Sources */,
 				BB98E6771D3D23CF00683672 /* UIButton+WebCache.m in Sources */,
 				BB98E6851D3D23CF00683672 /* ttNavigationController.m in Sources */,
 				BBC134F01D3B5565007C052B /* main.m in Sources */,
@@ -883,6 +910,7 @@
 				BB98E6761D3D23CF00683672 /* SDWebImagePrefetcher.m in Sources */,
 				BB98E6E51D3E0DB200683672 /* MJRefreshAutoNormalFooter.m in Sources */,
 				BB98E6881D3D23CF00683672 /* ttTabBar.m in Sources */,
+				BB0D2A371D3F680D00C66D3D /* ttAllVc.m in Sources */,
 				BB98E6721D3D23CF00683672 /* SDWebImageDecoder.m in Sources */,
 				BB98E6701D3D23CF00683672 /* SDImageCache.m in Sources */,
 				BB98E6F81D3E1A9300683672 /* ttRecommendTag.m in Sources */,
@@ -891,6 +919,7 @@
 				BB98E6641D3D23CF00683672 /* ttRecommendCategoryCell.m in Sources */,
 				BB98E6841D3D23CF00683672 /* UIView+ttExtension.m in Sources */,
 				BB98E6AE1D3E0D9A00683672 /* NSObject+MJProperty.m in Sources */,
+				BB0D2A3D1D3F683100C66D3D /* ttVoiceVc.m in Sources */,
 				BB98E6621D3D23CF00683672 /* ttRecommendCategory.m in Sources */,
 				BB98E6741D3D23CF00683672 /* SDWebImageDownloaderOperation.m in Sources */,
 				BB98E6821D3D23CF00683672 /* SVRadialGradientLayer.m in Sources */,
@@ -902,6 +931,7 @@
 				BB98E67B1D3D23CF00683672 /* UIImageView+HighlightedWebCache.m in Sources */,
 				BB98E6DF1D3E0DB200683672 /* MJRefreshAutoFooter.m in Sources */,
 				BB98E65D1D3D23CF00683672 /* ttEssenceVc.m in Sources */,
+				BB0D2A431D3F684E00C66D3D /* ttWordVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
