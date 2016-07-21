@@ -40,7 +40,7 @@
                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
-                        <state key="highlighted" backgroundImage="FollowBtnClickBgmageBackground">
+                        <state key="highlighted" backgroundImage="FollowBtnClickBg">
                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
@@ -77,6 +77,6 @@
     </objects>
     <resources>
         <image name="FollowBtnBg" width="51" height="25"/>
-        <image name="FollowBtnClickBgmageBackground" width="51" height="25"/>
+        <image name="FollowBtnClickBg" width="51" height="25"/>
     </resources>
 </document>

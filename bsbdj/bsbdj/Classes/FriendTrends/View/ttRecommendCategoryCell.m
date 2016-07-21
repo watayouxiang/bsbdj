@@ -18,7 +18,6 @@
 
 #pragma mark - 从xib加载时会调用的方法
 - (void)awakeFromNib {
-    //[super awakeFromNib];
     self.backgroundColor = ttRGBColor(244, 244, 244);
     self.indicatorView.backgroundColor = [UIColor redColor];
     

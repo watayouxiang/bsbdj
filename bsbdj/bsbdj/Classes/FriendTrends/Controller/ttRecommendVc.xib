@@ -23,7 +23,7 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="70" id="UHb-lj-daD"/>
                     </constraints>
-                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d4R-2c-Kzz" userLabel="右侧">
                     <rect key="frame" x="70" y="0.0" width="269" height="341"/>
