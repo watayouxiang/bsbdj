@@ -25,8 +25,7 @@
     [self.window makeKeyAndVisible];
     
     // 显示推送引导
-    [ttGuideView show];
-    return YES;
+    [ttGuideView show];   
     
     return YES;
 }
