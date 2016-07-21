@@ -21,8 +21,11 @@
 
 -(void)setUser:(ttRecommendUser *)user{
     _user = user;
+    
+    //用户名
     self.screenNameLabel.text = user.screen_name;
     
+    //粉丝数
     NSString *fansCount = nil;
     if (user.fans_count < 10000) {
         fansCount = [NSString stringWithFormat:@"%zd人关注", user.fans_count];
@@ -31,7 +34,7 @@
     }
     self.fansCountLabel.text = fansCount;
     
-    //给URL直接设置图片, 如果无图则显示默认图片"defaultUserIcon"
+    //图片: 给URL直接设置图片, 如果无图则显示默认图片"defaultUserIcon"
     [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:user.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
 }
 

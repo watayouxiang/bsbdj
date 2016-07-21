@@ -16,28 +16,32 @@
 
 @implementation ttRecommendCategoryCell
 
+#pragma mark - 从xib加载时会调用的方法
 - (void)awakeFromNib {
     //[super awakeFromNib];
     self.backgroundColor = ttRGBColor(244, 244, 244);
-    self.indicatorView.backgroundColor = ttRGBColor(219, 21, 26);
+    self.indicatorView.backgroundColor = [UIColor redColor];
     
 }
 
-//重写category的set方法
+#pragma mark - 重写category的set方法
 -(void)setCategory:(ttRecommendCategory *)category{
     _category = category;
+    
+    //设置类名
     self.textLabel.text = category.name;
 }
 
+#pragma mark - 重新布局
 -(void)layoutSubviews{
     [super layoutSubviews];
     
-    //调整内部的textLabel的frame
+    //分割线的高度为1, 为了textLabel不遮住分割线, 调整内部的textLabel的frame
     self.textLabel.y = 2;
     self.textLabel.height = self.contentView.height - 2 * self.textLabel.y;
 }
 
-//选中cell调用的方法
+#pragma mark - 选中cell调用的方法
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

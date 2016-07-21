@@ -16,13 +16,14 @@
 #import "MJRefresh.h"
 #import "MJExtension.h"
 
+//获取左侧类别
 #define ttSelectedCategory self.categories[self.categoryTableView.indexPathForSelectedRow.row]
 
 @interface ttRecommendVc ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *categoryTableView;//左侧表格
 @property (weak, nonatomic) IBOutlet UITableView *userTableView;//右侧表格
-@property (nonatomic, strong) NSMutableDictionary *params;//请求参数
 @property (nonatomic, strong) AFHTTPSessionManager *manager;//AFN请求管理者
+@property (nonatomic, strong) NSMutableDictionary *params;//请求参数
 @property (nonatomic, strong) NSArray *categories;//左侧类别数据
 @end
 
@@ -49,7 +50,7 @@ static NSString * const ttUserId = @"user";
     
 }
 
-#pragma mark - 加载左侧类别数据
+#pragma mark - 加载左侧数据
 -(void)loadCategories{
     
     // 显示指示器
@@ -59,12 +60,12 @@ static NSString * const ttUserId = @"user";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"category";
     params[@"c"] = @"subscribe";
+    
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
-        ttLog(@"downloadProgress: %@", downloadProgress);
-        
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        ttLog(@"网络返回数据: %@", responseObject);
+        ttLog(@"左侧数据---> %@", responseObject);
+        [responseObject writeToFile:@"/Users/TaoWang/Desktop/左侧数据.plist" atomically:YES];
         
         // 隐藏指示器
         [SVProgressHUD dismiss];
@@ -80,6 +81,7 @@ static NSString * const ttUserId = @"user";
         
         // 让用户表格进入下拉刷新状态
         [self.userTableView.mj_header beginRefreshing];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         // 显示失败信息
         [SVProgressHUD showErrorWithStatus:@"加载推荐信息失败!"];
@@ -97,10 +99,11 @@ static NSString * const ttUserId = @"user";
 }
 
 /**
- *  加载用户数据
+ *  刷新用户数据
  */
 -(void)loadNewUsers{
-    ttRecommendCategory *rc = self.categories[self.categoryTableView.indexPathForSelectedRow.row];
+    // 获取左侧类别
+    ttRecommendCategory *rc = ttSelectedCategory;
     
     // 设置当前页码为1
     rc.currentPage = 1;
@@ -113,11 +116,13 @@ static NSString * const ttUserId = @"user";
     params[@"page"] = @(rc.currentPage);
     self.params = params;
     
-    // 发送请求给服务器, 加载右侧的数据
+    // 发送请求给服务器, 刷新右侧的数据
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
-        ttLog(@"downloadProgress: %@", downloadProgress);
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        ttLog(@"右侧下拉刷新数据---> %@", responseObject);
+        [responseObject writeToFile:@"/Users/TaoWang/Desktop/右侧下拉刷新数据.plist" atomically:YES];
+        
         // 字典数组 -> 模型数组
         NSArray *users = [ttRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
@@ -141,6 +146,7 @@ static NSString * const ttUserId = @"user";
         
         // 让底部控件结束刷新
         [self checkFooterState];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         // 不是最后一次请求
         if (self.params != params) return;
@@ -159,7 +165,7 @@ static NSString * const ttUserId = @"user";
  */
 -(void)loadMoreUsers{
     // 获取选中cell的数据
-    ttRecommendCategory *category = self.categories[self.categoryTableView.indexPathForSelectedRow.row];
+    ttRecommendCategory *category = ttSelectedCategory;
     
     // 发送请求给服务器, 加载右侧的数据
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
@@ -171,9 +177,10 @@ static NSString * const ttUserId = @"user";
     
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
-        ttLog(@"downloadProgress: %@", downloadProgress);
-        
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        ttLog(@"右侧加载更多数据---> %@", responseObject);
+        [responseObject writeToFile:@"/Users/TaoWang/Desktop/右侧加载更多数据.plist" atomically:YES];
+        
         // 字典数组 -> 模型数组
         NSArray *users = [ttRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
@@ -188,6 +195,7 @@ static NSString * const ttUserId = @"user";
         
         // 让底部控件结束刷新
         [self checkFooterState];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         // 不是最后一次请求
         if (self.params != params) return;
@@ -198,6 +206,25 @@ static NSString * const ttUserId = @"user";
         // 让底部控件结束刷新
         [self.userTableView.mj_footer endRefreshing];
     }];
+    
+}
+
+/**
+ *  时刻检测footer的状态
+ */
+-(void)checkFooterState{
+    // 获取选中的类别
+    ttRecommendCategory *rc = ttSelectedCategory;
+    
+    // 每次刷新右边数据时, 都控制footer显示或者隐藏
+    self.userTableView.mj_footer.hidden = (rc.users.count == 0);
+    
+    // 让底部控件结束刷新
+    if (rc.users.count == rc.total) { // 全部数据已经加载完毕
+        [self.userTableView.mj_footer endRefreshingWithNoMoreData];
+    } else { // 还没有加载完毕
+        [self.userTableView.mj_footer endRefreshing];
+    }
     
 }
 
@@ -213,7 +240,7 @@ static NSString * const ttUserId = @"user";
     self.userTableView.delegate = self;
     
     //设置内边距
-    self.automaticallyAdjustsScrollViewInsets = NO;//不要系统自动设置内边距
+    self.automaticallyAdjustsScrollViewInsets = NO;//不要系统自动调节内边距
     self.categoryTableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     self.userTableView.contentInset = self.categoryTableView.contentInset;
     self.userTableView.rowHeight = 70;
@@ -223,23 +250,6 @@ static NSString * const ttUserId = @"user";
     
     //设置背景色
     self.view.backgroundColor = ttGlobalBg;
-}
-
-#pragma mark - 时刻检测footer的状态
--(void)checkFooterState{
-    // 获取选中的cell对应的右侧数据
-    ttRecommendCategory *rc = self.categories[self.categoryTableView.indexPathForSelectedRow.row];
-    
-    // 每次刷新右边数据时, 都控制footer显示或者隐藏
-    self.userTableView.mj_footer.hidden = (rc.users.count == 0);
-    
-    // 让底部控件结束刷新
-    if (rc.users.count == rc.total) { // 全部数据已经加载完毕
-        [self.userTableView.mj_footer endRefreshingWithNoMoreData];
-    } else { // 还没有加载完毕
-        [self.userTableView.mj_footer endRefreshing];
-    }
-    
 }
 
 #pragma mark - <UITableViewDataSource>
