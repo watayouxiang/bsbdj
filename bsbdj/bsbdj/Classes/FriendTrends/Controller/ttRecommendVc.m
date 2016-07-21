@@ -16,6 +16,8 @@
 #import "MJRefresh.h"
 #import "MJExtension.h"
 
+#define ttSelectedCategory self.categories[self.categoryTableView.indexPathForSelectedRow.row]
+
 @interface ttRecommendVc ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *categoryTableView;//左侧表格
 @property (weak, nonatomic) IBOutlet UITableView *userTableView;//右侧表格
@@ -87,7 +89,7 @@ static NSString * const ttUserId = @"user";
 
 #pragma mark - 添加MJRefresh控件
 -(void)setupRefresh{
-    self.userTableView.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewUsers)];
+    self.userTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewUsers)];
     
     self.userTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
     
@@ -203,7 +205,12 @@ static NSString * const ttUserId = @"user";
 -(void)setupTableView{
     //注册xib
     [self.categoryTableView registerNib:[UINib nibWithNibName:NSStringFromClass([ttRecommendCategoryCell class])  bundle:nil] forCellReuseIdentifier:ttCategoryId];
+    self.categoryTableView.dataSource = self;
+    self.categoryTableView.delegate = self;
+    
     [self.userTableView registerNib:[UINib nibWithNibName:NSStringFromClass([ttRecommendUserCell class]) bundle:nil] forCellReuseIdentifier:ttUserId];
+    self.userTableView.dataSource = self;
+    self.userTableView.delegate = self;
     
     //设置内边距
     self.automaticallyAdjustsScrollViewInsets = NO;//不要系统自动设置内边距
@@ -236,31 +243,55 @@ static NSString * const ttUserId = @"user";
 }
 
 #pragma mark - <UITableViewDataSource>
-//每组有几行
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // 左边的类别表格
+    if (tableView == self.categoryTableView) return self.categories.count;
     
-    //左侧表格数据
-    if (tableView == self.categoryTableView) {
-        return self.categories.count;
-    }
+    // 监测footer的状态
+    [self checkFooterState];
     
-    return 0;
+    // 右边的用户表格
+    return [ttSelectedCategory users].count;
 }
 
-//cell
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (tableView == self.categoryTableView) { // 左边的类别表格
+        ttRecommendCategoryCell *cell = [tableView dequeueReusableCellWithIdentifier:ttCategoryId];
+        cell.category = self.categories[indexPath.row];
+        return cell;
+    } else { // 右边的用户表格
+        ttRecommendUserCell *cell = [tableView dequeueReusableCellWithIdentifier:ttUserId];
+        cell.user = [ttSelectedCategory users][indexPath.row];
+        return cell;
+    }
 }
 
 #pragma mark - <UITableViewDelegate>
-//选中cell时调用
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // 结束刷新
+    [self.userTableView.mj_header endRefreshing];
+    [self.userTableView.mj_footer endRefreshing];
     
+    ttRecommendCategory *c = self.categories[indexPath.row];
+    if (c.users.count) {
+        // 显示曾经的数据
+        [self.userTableView reloadData];
+    } else {
+        // 赶紧刷新表格,目的是: 马上显示当前category的用户数据, 不让用户看见上一个category的残留数据
+        [self.userTableView reloadData];
+        
+        // 进入下拉刷新状态
+        [self.userTableView.mj_header beginRefreshing];
+    }
 }
 
 #pragma mark - 控制器销毁
 -(void)dealloc{
-    
+    // 停止所有操作
+    [self.manager.operationQueue cancelAllOperations];
 }
 
 @end

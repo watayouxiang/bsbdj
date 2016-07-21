@@ -21,10 +21,20 @@
                             <constraint firstAttribute="width" constant="5" id="VPK-gk-4N5"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxS-he-Q0w" userLabel="分割线">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nmn-Rn-frZ"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VxS-he-Q0w" secondAttribute="trailing" id="4bZ-GK-XTQ"/>
+                    <constraint firstItem="VxS-he-Q0w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DvX-g5-arY"/>
                     <constraint firstItem="6AO-yX-7M9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Xsb-Rq-DDV"/>
                     <constraint firstItem="6AO-yX-7M9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="s40-l0-Jai"/>
+                    <constraint firstAttribute="bottom" secondItem="VxS-he-Q0w" secondAttribute="bottom" id="wRG-2p-gPc"/>
                     <constraint firstAttribute="bottom" secondItem="6AO-yX-7M9" secondAttribute="bottom" id="zts-K9-EPJ"/>
                 </constraints>
             </tableViewCellContentView>

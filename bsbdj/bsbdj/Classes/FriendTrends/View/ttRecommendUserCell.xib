@@ -44,16 +44,26 @@
                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAr-9F-vPw" userLabel="分割线">
+                        <rect key="frame" x="0.0" y="82.5" width="371" height="1"/>
+                        <color key="backgroundColor" red="0.81388221149999995" green="0.81388221149999995" blue="0.81388221149999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="lxn-CU-nQ9"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="YHz-G5-leF" firstAttribute="top" secondItem="KBG-IB-AC6" secondAttribute="top" id="2CQ-Nx-p7y"/>
                     <constraint firstItem="KBG-IB-AC6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4iI-wx-Y92"/>
                     <constraint firstItem="KBG-IB-AC6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Bez-rY-4A2"/>
+                    <constraint firstAttribute="trailing" secondItem="HAr-9F-vPw" secondAttribute="trailing" id="C54-eJ-jhx"/>
                     <constraint firstItem="KBG-IB-AC6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SYo-Dt-nsh"/>
                     <constraint firstItem="IlN-W4-nr3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aOb-o3-puv"/>
                     <constraint firstItem="vWA-Vz-BmA" firstAttribute="leading" secondItem="KBG-IB-AC6" secondAttribute="trailing" constant="10" id="d8r-Y5-ozM"/>
                     <constraint firstItem="YHz-G5-leF" firstAttribute="leading" secondItem="KBG-IB-AC6" secondAttribute="trailing" constant="10" id="dwD-EX-uZQ"/>
+                    <constraint firstAttribute="bottom" secondItem="HAr-9F-vPw" secondAttribute="bottom" id="j57-XE-1H2"/>
                     <constraint firstAttribute="trailing" secondItem="IlN-W4-nr3" secondAttribute="trailing" constant="10" id="q6Q-qK-r5I"/>
+                    <constraint firstItem="HAr-9F-vPw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qdo-FS-WDP"/>
                     <constraint firstItem="vWA-Vz-BmA" firstAttribute="bottom" secondItem="KBG-IB-AC6" secondAttribute="bottom" id="vfd-rr-hbN"/>
                 </constraints>
             </tableViewCellContentView>
