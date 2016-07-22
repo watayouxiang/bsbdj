@@ -8,6 +8,7 @@
 
 #import "ttFriendTrendsVc.h"
 #import "ttRecommendVc.h"
+#import "ttLoginRegisterVc.h"
 
 @interface ttFriendTrendsVc ()
 
@@ -26,6 +27,11 @@
 - (void)friendsClick {
     ttRecommendVc *vc = [[ttRecommendVc alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)loginRegister {
+    ttLoginRegisterVc *login = [[ttLoginRegisterVc alloc] init];
+    [self presentViewController:login animated:YES completion:nil];
 }
 
 @end

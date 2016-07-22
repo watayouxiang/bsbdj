@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0538331D40D4C500840432 /* ttLoginRegisterVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0538311D40D4C500840432 /* ttLoginRegisterVc.m */; };
+		BB0538341D40D4C500840432 /* ttLoginRegisterVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0538321D40D4C500840432 /* ttLoginRegisterVc.xib */; };
 		BB0D2A2D1D3F644400C66D3D /* ttGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */; };
 		BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0D2A301D3F647500C66D3D /* ttGuideView.xib */; };
 		BB0D2A371D3F680D00C66D3D /* ttAllVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A361D3F680D00C66D3D /* ttAllVc.m */; };
@@ -96,11 +98,16 @@
 		BB98E6F81D3E1A9300683672 /* ttRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E6F71D3E1A9300683672 /* ttRecommendTag.m */; };
 		BB98E6FC1D3E1ABC00683672 /* ttRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E6FA1D3E1ABC00683672 /* ttRecommendTagCell.m */; };
 		BB98E6FD1D3E1ABC00683672 /* ttRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB98E6FB1D3E1ABC00683672 /* ttRecommendTagCell.xib */; };
+		BBB86F291D41F5B300C8DA3A /* ttVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */; };
+		BBB86F2C1D41F6DD00C8DA3A /* ttTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */; };
 		BBC134F01D3B5565007C052B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC134EF1D3B5565007C052B /* main.m */; };
 		BBC134FB1D3B5565007C052B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC134FA1D3B5565007C052B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0538301D40D4C500840432 /* ttLoginRegisterVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttLoginRegisterVc.h; sourceTree = "<group>"; };
+		BB0538311D40D4C500840432 /* ttLoginRegisterVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttLoginRegisterVc.m; sourceTree = "<group>"; };
+		BB0538321D40D4C500840432 /* ttLoginRegisterVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttLoginRegisterVc.xib; sourceTree = "<group>"; };
 		BB0D2A2B1D3F644400C66D3D /* ttGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttGuideView.h; sourceTree = "<group>"; };
 		BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttGuideView.m; sourceTree = "<group>"; };
 		BB0D2A301D3F647500C66D3D /* ttGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttGuideView.xib; sourceTree = "<group>"; };
@@ -275,6 +282,10 @@
 		BB98E6F91D3E1ABC00683672 /* ttRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttRecommendTagCell.h; path = bsbdj/Classes/Essence/Controller/ttRecommendTagCell.h; sourceTree = SOURCE_ROOT; };
 		BB98E6FA1D3E1ABC00683672 /* ttRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttRecommendTagCell.m; path = bsbdj/Classes/Essence/Controller/ttRecommendTagCell.m; sourceTree = SOURCE_ROOT; };
 		BB98E6FB1D3E1ABC00683672 /* ttRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ttRecommendTagCell.xib; path = bsbdj/Classes/Essence/Controller/ttRecommendTagCell.xib; sourceTree = SOURCE_ROOT; };
+		BBB86F271D41F5B300C8DA3A /* ttVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttVerticalButton.h; sourceTree = "<group>"; };
+		BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttVerticalButton.m; sourceTree = "<group>"; };
+		BBB86F2A1D41F6DD00C8DA3A /* ttTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTextField.h; sourceTree = "<group>"; };
+		BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTextField.m; sourceTree = "<group>"; };
 		BBC134EB1D3B5565007C052B /* bsbdj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bsbdj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC134EF1D3B5565007C052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBC134FA1D3B5565007C052B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -371,6 +382,9 @@
 				BB98E5F21D3D23CF00683672 /* ttFriendTrendsVc.h */,
 				BB98E5F31D3D23CF00683672 /* ttFriendTrendsVc.m */,
 				BB98E5F41D3D23CF00683672 /* ttFriendTrendsVc.xib */,
+				BB0538301D40D4C500840432 /* ttLoginRegisterVc.h */,
+				BB0538311D40D4C500840432 /* ttLoginRegisterVc.m */,
+				BB0538321D40D4C500840432 /* ttLoginRegisterVc.xib */,
 				BB98E5F51D3D23CF00683672 /* ttRecommendVc.h */,
 				BB98E5F61D3D23CF00683672 /* ttRecommendVc.m */,
 				BB98E5F71D3D23CF00683672 /* ttRecommendVc.xib */,
@@ -398,6 +412,10 @@
 				BB98E6011D3D23CF00683672 /* ttRecommendUserCell.h */,
 				BB98E6021D3D23CF00683672 /* ttRecommendUserCell.m */,
 				BB98E6031D3D23CF00683672 /* ttRecommendUserCell.xib */,
+				BBB86F271D41F5B300C8DA3A /* ttVerticalButton.h */,
+				BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */,
+				BBB86F2A1D41F6DD00C8DA3A /* ttTextField.h */,
+				BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -832,6 +850,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB98E6FD1D3E1ABC00683672 /* ttRecommendTagCell.xib in Resources */,
+				BB0538341D40D4C500840432 /* ttLoginRegisterVc.xib in Resources */,
 				BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */,
 				BB98E6651D3D23CF00683672 /* ttRecommendCategoryCell.xib in Resources */,
 				BB98E6801D3D23CF00683672 /* SVProgressHUD.bundle in Resources */,
@@ -856,10 +875,13 @@
 				BB98E67A1D3D23CF00683672 /* UIImage+WebP.m in Sources */,
 				BB98E6E01D3E0DB200683672 /* MJRefreshBackFooter.m in Sources */,
 				BB98E6EE1D3E0DB200683672 /* MJRefreshConst.m in Sources */,
+				BBB86F2C1D41F6DD00C8DA3A /* ttTextField.m in Sources */,
 				BB0D2A401D3F684000C66D3D /* ttPictureVc.m in Sources */,
 				BB98E6A71D3E0D9A00683672 /* MJFoundation.m in Sources */,
+				BBB86F291D41F5B300C8DA3A /* ttVerticalButton.m in Sources */,
 				BB98E65E1D3D23CF00683672 /* ttFriendTrendsVc.m in Sources */,
 				BB98E6E61D3E0DB200683672 /* MJRefreshAutoStateFooter.m in Sources */,
+				BB0538331D40D4C500840432 /* ttLoginRegisterVc.m in Sources */,
 				BB98E6751D3D23CF00683672 /* SDWebImageManager.m in Sources */,
 				BB98E6661D3D23CF00683672 /* ttRecommendUserCell.m in Sources */,
 				BB98E6E71D3E0DB200683672 /* MJRefreshBackGifFooter.m in Sources */,
