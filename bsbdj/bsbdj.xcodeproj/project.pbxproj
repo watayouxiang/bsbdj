@@ -95,13 +95,13 @@
 		BB98E6F11D3E0DB200683672 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E6DC1D3E0DB200683672 /* UIScrollView+MJRefresh.m */; };
 		BB98E6F21D3E0DB200683672 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E6DE1D3E0DB200683672 /* UIView+MJExtension.m */; };
 		BB98E6F51D3E1A4200683672 /* ttRecommendTagsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E6F41D3E1A4200683672 /* ttRecommendTagsVc.m */; };
-		BB98E6F81D3E1A9300683672 /* ttRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E6F71D3E1A9300683672 /* ttRecommendTag.m */; };
-		BB98E6FC1D3E1ABC00683672 /* ttRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E6FA1D3E1ABC00683672 /* ttRecommendTagCell.m */; };
-		BB98E6FD1D3E1ABC00683672 /* ttRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB98E6FB1D3E1ABC00683672 /* ttRecommendTagCell.xib */; };
 		BBB86F291D41F5B300C8DA3A /* ttVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */; };
 		BBB86F2C1D41F6DD00C8DA3A /* ttTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */; };
 		BBC134F01D3B5565007C052B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC134EF1D3B5565007C052B /* main.m */; };
 		BBC134FB1D3B5565007C052B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC134FA1D3B5565007C052B /* Assets.xcassets */; };
+		BBE210381D45E44D00A39858 /* ttRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210371D45E44D00A39858 /* ttRecommendTag.m */; };
+		BBE2103F1D45E46400A39858 /* ttRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2103B1D45E46400A39858 /* ttRecommendTagCell.m */; };
+		BBE210401D45E46400A39858 /* ttRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE2103C1D45E46400A39858 /* ttRecommendTagCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -277,11 +277,6 @@
 		BB98E6DE1D3E0DB200683672 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		BB98E6F31D3E1A4200683672 /* ttRecommendTagsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTagsVc.h; sourceTree = "<group>"; };
 		BB98E6F41D3E1A4200683672 /* ttRecommendTagsVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttRecommendTagsVc.m; sourceTree = "<group>"; };
-		BB98E6F61D3E1A9300683672 /* ttRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttRecommendTag.h; path = bsbdj/Classes/Essence/Controller/ttRecommendTag.h; sourceTree = SOURCE_ROOT; };
-		BB98E6F71D3E1A9300683672 /* ttRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttRecommendTag.m; path = bsbdj/Classes/Essence/Controller/ttRecommendTag.m; sourceTree = SOURCE_ROOT; };
-		BB98E6F91D3E1ABC00683672 /* ttRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttRecommendTagCell.h; path = bsbdj/Classes/Essence/Controller/ttRecommendTagCell.h; sourceTree = SOURCE_ROOT; };
-		BB98E6FA1D3E1ABC00683672 /* ttRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttRecommendTagCell.m; path = bsbdj/Classes/Essence/Controller/ttRecommendTagCell.m; sourceTree = SOURCE_ROOT; };
-		BB98E6FB1D3E1ABC00683672 /* ttRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ttRecommendTagCell.xib; path = bsbdj/Classes/Essence/Controller/ttRecommendTagCell.xib; sourceTree = SOURCE_ROOT; };
 		BBB86F271D41F5B300C8DA3A /* ttVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttVerticalButton.h; sourceTree = "<group>"; };
 		BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttVerticalButton.m; sourceTree = "<group>"; };
 		BBB86F2A1D41F6DD00C8DA3A /* ttTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTextField.h; sourceTree = "<group>"; };
@@ -290,6 +285,11 @@
 		BBC134EF1D3B5565007C052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBC134FA1D3B5565007C052B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC134FF1D3B5565007C052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE210361D45E44D00A39858 /* ttRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTag.h; sourceTree = "<group>"; };
+		BBE210371D45E44D00A39858 /* ttRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttRecommendTag.m; sourceTree = "<group>"; };
+		BBE2103A1D45E46400A39858 /* ttRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTagCell.h; sourceTree = "<group>"; };
+		BBE2103B1D45E46400A39858 /* ttRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttRecommendTagCell.m; sourceTree = "<group>"; };
+		BBE2103C1D45E46400A39858 /* ttRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttRecommendTagCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,8 +320,8 @@
 			isa = PBXGroup;
 			children = (
 				BB98E5EB1D3D23CF00683672 /* Controller */,
-				BB98E5EE1D3D23CF00683672 /* Model */,
-				BB98E5EF1D3D23CF00683672 /* View */,
+				BBE210391D45E46400A39858 /* View */,
+				BBE210351D45E44D00A39858 /* Model */,
 			);
 			path = Essence;
 			sourceTree = "<group>";
@@ -345,25 +345,6 @@
 				BB98E6F41D3E1A4200683672 /* ttRecommendTagsVc.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		BB98E5EE1D3D23CF00683672 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BB98E6F61D3E1A9300683672 /* ttRecommendTag.h */,
-				BB98E6F71D3E1A9300683672 /* ttRecommendTag.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		BB98E5EF1D3D23CF00683672 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				BB98E6F91D3E1ABC00683672 /* ttRecommendTagCell.h */,
-				BB98E6FA1D3E1ABC00683672 /* ttRecommendTagCell.m */,
-				BB98E6FB1D3E1ABC00683672 /* ttRecommendTagCell.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		BB98E5F01D3D23CF00683672 /* FriendTrends */ = {
@@ -790,6 +771,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BBE210351D45E44D00A39858 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBE210361D45E44D00A39858 /* ttRecommendTag.h */,
+				BBE210371D45E44D00A39858 /* ttRecommendTag.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBE210391D45E46400A39858 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBE2103A1D45E46400A39858 /* ttRecommendTagCell.h */,
+				BBE2103B1D45E46400A39858 /* ttRecommendTagCell.m */,
+				BBE2103C1D45E46400A39858 /* ttRecommendTagCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -849,7 +849,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB98E6FD1D3E1ABC00683672 /* ttRecommendTagCell.xib in Resources */,
 				BB0538341D40D4C500840432 /* ttLoginRegisterVc.xib in Resources */,
 				BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */,
 				BB98E6651D3D23CF00683672 /* ttRecommendCategoryCell.xib in Resources */,
@@ -859,6 +858,7 @@
 				BB98E6671D3D23CF00683672 /* ttRecommendUserCell.xib in Resources */,
 				BBC134FB1D3B5565007C052B /* Assets.xcassets in Resources */,
 				BB98E6ED1D3E0DB200683672 /* MJRefresh.bundle in Resources */,
+				BBE210401D45E46400A39858 /* ttRecommendTagCell.xib in Resources */,
 				BB98E6A51D3E0D9A00683672 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -891,6 +891,7 @@
 				BB98E6AA1D3E0D9A00683672 /* MJPropertyType.m in Sources */,
 				BB98E6691D3D23CF00683672 /* AFNetworkReachabilityManager.m in Sources */,
 				BB98E6E81D3E0DB200683672 /* MJRefreshBackNormalFooter.m in Sources */,
+				BBE210381D45E44D00A39858 /* ttRecommendTag.m in Sources */,
 				BB98E66D1D3D23CF00683672 /* AFURLSessionManager.m in Sources */,
 				BB98E6AB1D3E0D9A00683672 /* NSObject+MJClass.m in Sources */,
 				BB98E6EF1D3E0DB200683672 /* NSBundle+MJRefresh.m in Sources */,
@@ -924,10 +925,10 @@
 				BB98E6EA1D3E0DB200683672 /* MJRefreshGifHeader.m in Sources */,
 				BB98E6E31D3E0DB200683672 /* MJRefreshHeader.m in Sources */,
 				BB98E6F01D3E0DB200683672 /* UIScrollView+MJExtension.m in Sources */,
-				BB98E6FC1D3E1ABC00683672 /* ttRecommendTagCell.m in Sources */,
 				BB98E68D1D3D24BF00683672 /* AppDelegate.m in Sources */,
 				BB98E6811D3D23CF00683672 /* SVProgressHUD.m in Sources */,
 				BB98E6831D3D23CF00683672 /* UIBarButtonItem+ttExtension.m in Sources */,
+				BBE2103F1D45E46400A39858 /* ttRecommendTagCell.m in Sources */,
 				BB98E6871D3D23CF00683672 /* Foundation+Log.m in Sources */,
 				BB98E6761D3D23CF00683672 /* SDWebImagePrefetcher.m in Sources */,
 				BB98E6E51D3E0DB200683672 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -935,7 +936,6 @@
 				BB0D2A371D3F680D00C66D3D /* ttAllVc.m in Sources */,
 				BB98E6721D3D23CF00683672 /* SDWebImageDecoder.m in Sources */,
 				BB98E6701D3D23CF00683672 /* SDImageCache.m in Sources */,
-				BB98E6F81D3E1A9300683672 /* ttRecommendTag.m in Sources */,
 				BB98E6711D3D23CF00683672 /* SDWebImageCompat.m in Sources */,
 				BB98E67D1D3D23CF00683672 /* UIView+WebCacheOperation.m in Sources */,
 				BB98E6641D3D23CF00683672 /* ttRecommendCategoryCell.m in Sources */,
