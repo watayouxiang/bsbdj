@@ -11,6 +11,8 @@
 
 #import "UIView+ttExtension.h"
 #import "UIBarButtonItem+ttExtension.h"
+#import "NSDate+ttExtension.h"
+#import "ttConst.h"
 
 #ifdef DEBUG
 #define ttLog(...) NSLog(__VA_ARGS__)

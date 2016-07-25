@@ -8,11 +8,7 @@
 
 #import "ttEssenceVc.h"
 #import "ttRecommendTagsVc.h"
-#import "ttAllVc.h"
-#import "ttVideoVc.h"
-#import "ttVoiceVc.h"
-#import "ttWordVc.h"
-#import "ttPictureVc.h"
+#import "ttTopicVc.h"
 
 @interface ttEssenceVc ()<UIScrollViewDelegate>
 /** 标签栏底部的红色指示器 */
@@ -143,20 +139,30 @@
 #pragma mark - 初始化子控制器
 - (void)setupChildVces
 {
-    ttAllVc *all = [[ttAllVc alloc] init];
+    ttTopicVc *word = [[ttTopicVc alloc] init];
+    word.title = @"段子";
+    word.type = ttTopicTypeWord;
+    [self addChildViewController:word];
+    
+    ttTopicVc *all = [[ttTopicVc alloc] init];
+    all.title = @"全部";
+    all.type = ttTopicTypeAll;
     [self addChildViewController:all];
     
-    ttVideoVc *video = [[ttVideoVc alloc] init];
-    [self addChildViewController:video];
-    
-    ttVoiceVc *voice = [[ttVoiceVc alloc] init];
-    [self addChildViewController:voice];
-    
-    ttPictureVc *picture = [[ttPictureVc alloc] init];
+    ttTopicVc *picture = [[ttTopicVc alloc] init];
+    picture.title = @"图片";
+    picture.type = ttTopicTypePicture;
     [self addChildViewController:picture];
     
-    ttWordVc *word = [[ttWordVc alloc] init];
-    [self addChildViewController:word];
+    ttTopicVc *video = [[ttTopicVc alloc] init];
+    video.title = @"视频";
+    video.type = ttTopicTypeVideo;
+    [self addChildViewController:video];
+    
+    ttTopicVc *voice = [[ttTopicVc alloc] init];
+    voice.title = @"声音";
+    voice.type = ttTopicTypeVoice;
+    [self addChildViewController:voice];
 }
 
 #pragma mark - 设置导航栏
