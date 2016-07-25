@@ -9,6 +9,7 @@
 #import "ttTopicCell.h"
 #import "ttTopic.h"
 #import "UIImageView+WebCache.h"
+#import "ttTopicPictureView.h"
 
 @interface ttTopicCell ()
 /** 头像 */
@@ -27,10 +28,25 @@
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 /** 新浪加V */
 @property (weak, nonatomic) IBOutlet UIImageView *sinaVView;
+/** 帖子的文字内容 */
+@property (weak, nonatomic) IBOutlet UILabel *text_label;
+/** 图片帖子中间的内容 */
+@property (nonatomic, weak) ttTopicPictureView *pictureView;
 @end
 
 @implementation ttTopicCell
 
+#pragma mark - 懒加载pictureView
+- (ttTopicPictureView *)pictureView {
+    if (!_pictureView) {
+        ttTopicPictureView *pictureView = [ttTopicPictureView pictureView];
+        [self.contentView addSubview:pictureView];
+        _pictureView = pictureView;
+    }
+    return _pictureView;
+}
+
+#pragma mark - 加载xib
 - (void)awakeFromNib {
     [super awakeFromNib];
     
@@ -39,9 +55,7 @@
     self.backgroundView = bgView;
 }
 
-/**
- *  设置帖子数据
- */
+#pragma mark - 重写setTopic
 - (void)setTopic:(ttTopic *)topic {
     _topic = topic;
     
@@ -62,11 +76,21 @@
     [self setupButtonTitle:self.caiButton count:topic.cai placeholder:@"踩"];
     [self setupButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
     [self setupButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
+    
+    // 设置帖子的文字内容
+    self.text_label.text = topic.text;
+    
+    // 根据帖子类型添加对应的内容到cell的中间
+    if (topic.type == ttTopicTypePicture) { // 图片帖子
+        self.pictureView.topic = topic;
+        self.pictureView.frame = topic.pictureF;
+    } else if (topic.type == ttTopicTypeVoice) { // 声音帖子
+        
+        //...
+    }
 }
 
-/**
- * 设置底部按钮文字
- */
+#pragma mark - 设置底部按钮文字
 - (void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder {
     if (count > 10000) {
         placeholder = [NSString stringWithFormat:@"%.1f万", count / 10000.0];
@@ -76,16 +100,13 @@
     [button setTitle:placeholder forState:UIControlStateNormal];
 }
 
-/**
- *  重新设置cell的frame
- */
+#pragma mark - 重新设置cell的frame
 - (void)setFrame:(CGRect)frame {
-    static CGFloat margin = 5;
     
-    frame.origin.x = margin;
-    frame.size.width -= 2 * margin;
-    frame.size.height -= margin;
-    frame.origin.y += margin;
+    frame.origin.x = ttTopicCellMargin;
+    frame.size.width -= 2 * ttTopicCellMargin;
+    frame.size.height -= ttTopicCellMargin;
+    frame.origin.y += ttTopicCellMargin;
     
     [super setFrame:frame];
 }

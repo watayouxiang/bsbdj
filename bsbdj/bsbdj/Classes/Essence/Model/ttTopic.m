@@ -7,9 +7,31 @@
 //
 
 #import "ttTopic.h"
+#import "MJExtension.h"
 
 @implementation ttTopic
+{
+    CGFloat _cellHeight;
+    CGRect _pictureF;
+}
 
+#pragma mark - 修改属性名字
++ (NSDictionary *)replacedKeyFromPropertyName {
+    /**
+     来自: MJExtension.h
+     作用: 改名
+     image0改为small_image
+     image1改为large_image
+     image2改为middle_image
+     */
+    return @{
+             @"small_image" : @"image0",
+             @"large_image" : @"image1",
+             @"middle_image" : @"image2"
+             };
+}
+
+#pragma mark - 重写create_time方法
 - (NSString *)create_time {
     
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
@@ -41,5 +63,49 @@
     }
     
 }
+
+#pragma mark - 计算cell的高度
+- (CGFloat)cellHeight {
+    if (!_cellHeight) {
+        
+        // 计算文字的高度
+        CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 4 * ttTopicCellMargin, MAXFLOAT);
+        CGFloat textH = [self.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+        
+        /**  cell的高度 */
+        
+        //1. 文字部分的高度
+        _cellHeight = ttTopicCellTextY + textH + ttTopicCellMargin;
+        
+        //2. 根据段子的类型来计算cell的高度
+        if (self.type == ttTopicTypePicture) { // 图片帖子
+            // 图片显示出来的宽度
+            CGFloat pictureW = maxSize.width;
+            // 显示显示出来的高度
+            CGFloat pictureH = pictureW * self.height / self.width;
+            if (pictureH >= ttTopicCellPictureMaxH) { // 图片高度过长
+                pictureH = ttTopicCellPictureBreakH;
+                self.bigPicture = YES; // 说明是大图
+            }
+            
+            // 计算图片控件的frame
+            CGFloat pictureX = ttTopicCellMargin;
+            CGFloat pictureY = ttTopicCellTextY + textH + ttTopicCellMargin;
+            _pictureF = CGRectMake(pictureX, pictureY, pictureW, pictureH);
+            
+            _cellHeight += pictureH + ttTopicCellMargin;
+        } else if (self.type == ttTopicTypeVoice) { // 声音帖子
+            //...
+        }
+        
+        //3. 底部工具条的高度
+        CGFloat cellBottonBarH = ttTopicCellBottomBarH + ttTopicCellMargin;
+        
+        // cell的最终高度
+        _cellHeight += cellBottonBarH;
+    }
+    return _cellHeight;
+}
+
 
 @end

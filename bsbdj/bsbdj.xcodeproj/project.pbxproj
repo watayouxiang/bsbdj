@@ -93,7 +93,6 @@
 		BBB86F291D41F5B300C8DA3A /* ttVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */; };
 		BBB86F2C1D41F6DD00C8DA3A /* ttTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */; };
 		BBC134F01D3B5565007C052B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC134EF1D3B5565007C052B /* main.m */; };
-		BBC134FB1D3B5565007C052B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC134FA1D3B5565007C052B /* Assets.xcassets */; };
 		BBE210381D45E44D00A39858 /* ttRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210371D45E44D00A39858 /* ttRecommendTag.m */; };
 		BBE2103F1D45E46400A39858 /* ttRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2103B1D45E46400A39858 /* ttRecommendTagCell.m */; };
 		BBE210401D45E46400A39858 /* ttRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE2103C1D45E46400A39858 /* ttRecommendTagCell.xib */; };
@@ -102,7 +101,15 @@
 		BBE2104C1D45E60F00A39858 /* ttTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2104B1D45E60F00A39858 /* ttTopic.m */; };
 		BBE210521D45EB5A00A39858 /* ttConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210511D45EB5A00A39858 /* ttConst.m */; };
 		BBE210581D45EF8E00A39858 /* NSDate+ttExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210571D45EF8E00A39858 /* NSDate+ttExtension.m */; };
-		BBE2105A1D45F09700A39858 /* ttTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE210591D45F09700A39858 /* ttTopicCell.xib */; };
+		BBE2105C1D45FB8400A39858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE2105B1D45FB8400A39858 /* Assets.xcassets */; };
+		BBE2105E1D46026C00A39858 /* ttTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE2105D1D46026C00A39858 /* ttTopicCell.xib */; };
+		BBE210611D4602D200A39858 /* ttTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210601D4602D200A39858 /* ttTopicPictureView.m */; };
+		BBE210671D4603EB00A39858 /* ttShowPictureVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210651D4603EB00A39858 /* ttShowPictureVc.m */; };
+		BBE2106B1D46041D00A39858 /* ttProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2106A1D46041D00A39858 /* ttProgressView.m */; };
+		BBE210711D4604F400A39858 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2106E1D4604F400A39858 /* DACircularProgressView.m */; };
+		BBE210721D4604F400A39858 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210701D4604F400A39858 /* DALabeledCircularProgressView.m */; };
+		BBE210741D46058700A39858 /* ttTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE210731D46058700A39858 /* ttTopicPictureView.xib */; };
+		BBE210761D4606E900A39858 /* ttShowPictureVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE210751D4606E900A39858 /* ttShowPictureVc.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -274,7 +281,6 @@
 		BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTextField.m; sourceTree = "<group>"; };
 		BBC134EB1D3B5565007C052B /* bsbdj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bsbdj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC134EF1D3B5565007C052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BBC134FA1D3B5565007C052B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC134FF1D3B5565007C052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBE210361D45E44D00A39858 /* ttRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTag.h; sourceTree = "<group>"; };
 		BBE210371D45E44D00A39858 /* ttRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttRecommendTag.m; sourceTree = "<group>"; };
@@ -291,7 +297,20 @@
 		BBE210511D45EB5A00A39858 /* ttConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttConst.m; sourceTree = "<group>"; };
 		BBE210561D45EF8E00A39858 /* NSDate+ttExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ttExtension.h"; sourceTree = "<group>"; };
 		BBE210571D45EF8E00A39858 /* NSDate+ttExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ttExtension.m"; sourceTree = "<group>"; };
-		BBE210591D45F09700A39858 /* ttTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicCell.xib; sourceTree = "<group>"; };
+		BBE2105B1D45FB8400A39858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBE2105D1D46026C00A39858 /* ttTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicCell.xib; sourceTree = "<group>"; };
+		BBE2105F1D4602D200A39858 /* ttTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTopicPictureView.h; sourceTree = "<group>"; };
+		BBE210601D4602D200A39858 /* ttTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTopicPictureView.m; sourceTree = "<group>"; };
+		BBE210641D4603EB00A39858 /* ttShowPictureVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttShowPictureVc.h; sourceTree = "<group>"; };
+		BBE210651D4603EB00A39858 /* ttShowPictureVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttShowPictureVc.m; sourceTree = "<group>"; };
+		BBE210691D46041D00A39858 /* ttProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttProgressView.h; sourceTree = "<group>"; };
+		BBE2106A1D46041D00A39858 /* ttProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttProgressView.m; sourceTree = "<group>"; };
+		BBE2106D1D4604F400A39858 /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
+		BBE2106E1D4604F400A39858 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
+		BBE2106F1D4604F400A39858 /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALabeledCircularProgressView.h; sourceTree = "<group>"; };
+		BBE210701D4604F400A39858 /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALabeledCircularProgressView.m; sourceTree = "<group>"; };
+		BBE210731D46058700A39858 /* ttTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicPictureView.xib; sourceTree = "<group>"; };
+		BBE210751D4606E900A39858 /* ttShowPictureVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttShowPictureVc.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +356,9 @@
 				BB98E6F41D3E1A4200683672 /* ttRecommendTagsVc.m */,
 				BBE210421D45E56F00A39858 /* ttTopicVc.h */,
 				BBE210431D45E56F00A39858 /* ttTopicVc.m */,
+				BBE210641D4603EB00A39858 /* ttShowPictureVc.h */,
+				BBE210651D4603EB00A39858 /* ttShowPictureVc.m */,
+				BBE210751D4606E900A39858 /* ttShowPictureVc.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -398,6 +420,7 @@
 		BB98E6041D3D23CF00683672 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				BBE2106C1D4604F400A39858 /* DACircularProgress */,
 				BB98E6B01D3E0DB200683672 /* MJRefresh */,
 				BB98E68E1D3E0D9A00683672 /* MJExtension */,
 				BB98E6051D3D23CF00683672 /* AFNetworking */,
@@ -760,9 +783,9 @@
 		BBC134EE1D3B5565007C052B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BBE2105B1D45FB8400A39858 /* Assets.xcassets */,
 				BB98E68B1D3D24BF00683672 /* AppDelegate.h */,
 				BB98E68C1D3D24BF00683672 /* AppDelegate.m */,
-				BBC134FA1D3B5565007C052B /* Assets.xcassets */,
 				BBC134FF1D3B5565007C052B /* Info.plist */,
 				BBC134EF1D3B5565007C052B /* main.m */,
 			);
@@ -788,9 +811,25 @@
 				BBE2103C1D45E46400A39858 /* ttRecommendTagCell.xib */,
 				BBE210451D45E58F00A39858 /* ttTopicCell.h */,
 				BBE210461D45E58F00A39858 /* ttTopicCell.m */,
-				BBE210591D45F09700A39858 /* ttTopicCell.xib */,
+				BBE2105D1D46026C00A39858 /* ttTopicCell.xib */,
+				BBE2105F1D4602D200A39858 /* ttTopicPictureView.h */,
+				BBE210601D4602D200A39858 /* ttTopicPictureView.m */,
+				BBE210731D46058700A39858 /* ttTopicPictureView.xib */,
+				BBE210691D46041D00A39858 /* ttProgressView.h */,
+				BBE2106A1D46041D00A39858 /* ttProgressView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BBE2106C1D4604F400A39858 /* DACircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				BBE2106D1D4604F400A39858 /* DACircularProgressView.h */,
+				BBE2106E1D4604F400A39858 /* DACircularProgressView.m */,
+				BBE2106F1D4604F400A39858 /* DALabeledCircularProgressView.h */,
+				BBE210701D4604F400A39858 /* DALabeledCircularProgressView.m */,
+			);
+			path = DACircularProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -858,12 +897,14 @@
 				BB98E6801D3D23CF00683672 /* SVProgressHUD.bundle in Resources */,
 				BB98E65F1D3D23CF00683672 /* ttFriendTrendsVc.xib in Resources */,
 				BB98E6611D3D23CF00683672 /* ttRecommendVc.xib in Resources */,
+				BBE210741D46058700A39858 /* ttTopicPictureView.xib in Resources */,
 				BB98E6671D3D23CF00683672 /* ttRecommendUserCell.xib in Resources */,
-				BBC134FB1D3B5565007C052B /* Assets.xcassets in Resources */,
 				BB98E6ED1D3E0DB200683672 /* MJRefresh.bundle in Resources */,
+				BBE2105E1D46026C00A39858 /* ttTopicCell.xib in Resources */,
 				BBE210401D45E46400A39858 /* ttRecommendTagCell.xib in Resources */,
 				BB98E6A51D3E0D9A00683672 /* Info.plist in Resources */,
-				BBE2105A1D45F09700A39858 /* ttTopicCell.xib in Resources */,
+				BBE210761D4606E900A39858 /* ttShowPictureVc.xib in Resources */,
+				BBE2105C1D45FB8400A39858 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -918,6 +959,7 @@
 				BB98E6F11D3E0DB200683672 /* UIScrollView+MJRefresh.m in Sources */,
 				BB98E6601D3D23CF00683672 /* ttRecommendVc.m in Sources */,
 				BB98E67F1D3D23CF00683672 /* SVProgressAnimatedView.m in Sources */,
+				BBE210721D4604F400A39858 /* DALabeledCircularProgressView.m in Sources */,
 				BB98E66F1D3D23CF00683672 /* NSData+ImageContentType.m in Sources */,
 				BB98E6781D3D23CF00683672 /* UIImage+GIF.m in Sources */,
 				BBE210581D45EF8E00A39858 /* NSDate+ttExtension.m in Sources */,
@@ -935,12 +977,15 @@
 				BB98E6831D3D23CF00683672 /* UIBarButtonItem+ttExtension.m in Sources */,
 				BBE2103F1D45E46400A39858 /* ttRecommendTagCell.m in Sources */,
 				BB98E6871D3D23CF00683672 /* Foundation+Log.m in Sources */,
+				BBE210711D4604F400A39858 /* DACircularProgressView.m in Sources */,
 				BB98E6761D3D23CF00683672 /* SDWebImagePrefetcher.m in Sources */,
 				BB98E6E51D3E0DB200683672 /* MJRefreshAutoNormalFooter.m in Sources */,
 				BB98E6881D3D23CF00683672 /* ttTabBar.m in Sources */,
 				BB98E6721D3D23CF00683672 /* SDWebImageDecoder.m in Sources */,
 				BBE210521D45EB5A00A39858 /* ttConst.m in Sources */,
 				BB98E6701D3D23CF00683672 /* SDImageCache.m in Sources */,
+				BBE2106B1D46041D00A39858 /* ttProgressView.m in Sources */,
+				BBE210611D4602D200A39858 /* ttTopicPictureView.m in Sources */,
 				BB98E6711D3D23CF00683672 /* SDWebImageCompat.m in Sources */,
 				BB98E67D1D3D23CF00683672 /* UIView+WebCacheOperation.m in Sources */,
 				BB98E6641D3D23CF00683672 /* ttRecommendCategoryCell.m in Sources */,
@@ -951,6 +996,7 @@
 				BB98E6821D3D23CF00683672 /* SVRadialGradientLayer.m in Sources */,
 				BB98E6E41D3E0DB200683672 /* MJRefreshAutoGifFooter.m in Sources */,
 				BB98E6861D3D23CF00683672 /* ttTabBarController.m in Sources */,
+				BBE210671D4603EB00A39858 /* ttShowPictureVc.m in Sources */,
 				BB98E66A1D3D23CF00683672 /* AFSecurityPolicy.m in Sources */,
 				BB98E67C1D3D23CF00683672 /* UIImageView+WebCache.m in Sources */,
 				BB98E6E91D3E0DB200683672 /* MJRefreshBackStateFooter.m in Sources */,

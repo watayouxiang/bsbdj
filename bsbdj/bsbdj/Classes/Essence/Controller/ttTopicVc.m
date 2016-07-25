@@ -98,7 +98,10 @@ static NSString * const ttTopicCellId = @"topic";
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
         if (self.params != params) return;
+        ttLog(@"精华---> %@", responseObject);
+        [responseObject writeToFile:@"/Users/TaoWang/Desktop/精华下拉刷新.plist" atomically:YES];
         
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
@@ -148,6 +151,8 @@ static NSString * const ttTopicCellId = @"topic";
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (self.params != params) return;
+        ttLog(@"精华---> %@", responseObject);
+        [responseObject writeToFile:@"/Users/TaoWang/Desktop/精华加载更多.plist" atomically:YES];
         
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
@@ -194,7 +199,11 @@ static NSString * const ttTopicCellId = @"topic";
 #pragma mark - Table view delegate
 //行高
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 200;
+    // 取出帖子模型
+    ttTopic *topic = self.topics[indexPath.row];
+    
+    // 返回这个模型对应的cell高度
+    return topic.cellHeight;
 }
 
 @end

@@ -70,11 +70,19 @@
     [self.view addSubview:titlesView];
     self.titlesView = titlesView;
     
+    // 底部的红色指示器
+    UIView *indicatorView = [[UIView alloc] init];
+    indicatorView.backgroundColor = [UIColor redColor];
+    indicatorView.height = 2;
+    indicatorView.tag = -1;
+    indicatorView.y = titlesView.height - indicatorView.height;
+    self.indicatorView = indicatorView;
+    [titlesView addSubview:indicatorView];
+    
     // 内部的子标签
-    NSArray *titles = @[@"全部", @"视频", @"声音", @"图片", @"段子"];
-    CGFloat width = titlesView.width / titles.count;
+    CGFloat width = titlesView.width / self.childViewControllers.count;
     CGFloat height = titlesView.height;
-    for (NSInteger i = 0; i<titles.count; i++) {
+    for (NSInteger i = 0; i<self.childViewControllers.count; i++) {
         
         UIButton *button = [[UIButton alloc] init];
         button.tag = i;
@@ -83,7 +91,8 @@
         button.width = width;
         button.x = i * width;
         
-        [button setTitle:titles[i] forState:UIControlStateNormal];
+        UIViewController *vc = self.childViewControllers[i];
+        [button setTitle:vc.title forState:UIControlStateNormal];
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
         button.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -102,15 +111,6 @@
             self.indicatorView.centerX = button.centerX;
         }
     }
-    
-    // 底部的红色指示器
-    UIView *indicatorView = [[UIView alloc] init];
-    indicatorView.backgroundColor = [UIColor redColor];
-    indicatorView.height = 2;
-    indicatorView.tag = -1;
-    indicatorView.y = titlesView.height - indicatorView.height;
-    self.indicatorView = indicatorView;
-    [titlesView addSubview:indicatorView];
     
 }
 
@@ -139,6 +139,11 @@
 #pragma mark - 初始化子控制器
 - (void)setupChildVces
 {
+    ttTopicVc *picture = [[ttTopicVc alloc] init];
+    picture.title = @"图片";
+    picture.type = ttTopicTypePicture;
+    [self addChildViewController:picture];
+    
     ttTopicVc *word = [[ttTopicVc alloc] init];
     word.title = @"段子";
     word.type = ttTopicTypeWord;
@@ -148,11 +153,6 @@
     all.title = @"全部";
     all.type = ttTopicTypeAll;
     [self addChildViewController:all];
-    
-    ttTopicVc *picture = [[ttTopicVc alloc] init];
-    picture.title = @"图片";
-    picture.type = ttTopicTypePicture;
-    [self addChildViewController:picture];
     
     ttTopicVc *video = [[ttTopicVc alloc] init];
     video.title = @"视频";
