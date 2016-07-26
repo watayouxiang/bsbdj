@@ -58,4 +58,8 @@
     [self dismissViewControllerAnimated:NO completion:nil];
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self cancel];
+}
+
 @end
