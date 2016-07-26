@@ -110,6 +110,8 @@
 		BBE210721D4604F400A39858 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210701D4604F400A39858 /* DALabeledCircularProgressView.m */; };
 		BBE210741D46058700A39858 /* ttTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE210731D46058700A39858 /* ttTopicPictureView.xib */; };
 		BBE210761D4606E900A39858 /* ttShowPictureVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE210751D4606E900A39858 /* ttShowPictureVc.xib */; };
+		BBE2107A1D461A4C00A39858 /* ttPublishVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210781D461A4C00A39858 /* ttPublishVc.m */; };
+		BBE2107D1D461AA400A39858 /* ttPublishVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE2107C1D461AA400A39858 /* ttPublishVc.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -311,6 +313,9 @@
 		BBE210701D4604F400A39858 /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALabeledCircularProgressView.m; sourceTree = "<group>"; };
 		BBE210731D46058700A39858 /* ttTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicPictureView.xib; sourceTree = "<group>"; };
 		BBE210751D4606E900A39858 /* ttShowPictureVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttShowPictureVc.xib; sourceTree = "<group>"; };
+		BBE210771D461A4C00A39858 /* ttPublishVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttPublishVc.h; sourceTree = "<group>"; };
+		BBE210781D461A4C00A39858 /* ttPublishVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttPublishVc.m; sourceTree = "<group>"; };
+		BBE2107C1D461AA400A39858 /* ttPublishVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttPublishVc.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -542,6 +547,9 @@
 				BB98E6481D3D23CF00683672 /* ttNavigationController.m */,
 				BB98E6491D3D23CF00683672 /* ttTabBarController.h */,
 				BB98E64A1D3D23CF00683672 /* ttTabBarController.m */,
+				BBE210771D461A4C00A39858 /* ttPublishVc.h */,
+				BBE210781D461A4C00A39858 /* ttPublishVc.m */,
+				BBE2107C1D461AA400A39858 /* ttPublishVc.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -905,6 +913,7 @@
 				BB98E6A51D3E0D9A00683672 /* Info.plist in Resources */,
 				BBE210761D4606E900A39858 /* ttShowPictureVc.xib in Resources */,
 				BBE2105C1D45FB8400A39858 /* Assets.xcassets in Resources */,
+				BBE2107D1D461AA400A39858 /* ttPublishVc.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1003,6 +1012,7 @@
 				BB98E67B1D3D23CF00683672 /* UIImageView+HighlightedWebCache.m in Sources */,
 				BBE210441D45E56F00A39858 /* ttTopicVc.m in Sources */,
 				BB98E6DF1D3E0DB200683672 /* MJRefreshAutoFooter.m in Sources */,
+				BBE2107A1D461A4C00A39858 /* ttPublishVc.m in Sources */,
 				BB98E65D1D3D23CF00683672 /* ttEssenceVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

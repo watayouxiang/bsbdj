@@ -7,6 +7,7 @@
 //
 
 #import "ttTabBar.h"
+#import "ttPublishVc.h"
 
 @interface ttTabBar()
 @property (nonatomic, weak) UIButton *publishButton;//发布按钮
@@ -24,11 +25,20 @@
         UIButton *publishButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+        [publishButton addTarget:self action:@selector(publishClick) forControlEvents:UIControlEventTouchUpInside];
         publishButton.size = publishButton.currentBackgroundImage.size;
         [self addSubview:publishButton];
         self.publishButton = publishButton;
     }
     return self;
+}
+
+/**
+ *  发布btn点击事件
+ */
+- (void)publishClick {
+    ttPublishVc *publish = [[ttPublishVc alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publish animated:NO completion:nil];
 }
 
 -(void)layoutSubviews{
