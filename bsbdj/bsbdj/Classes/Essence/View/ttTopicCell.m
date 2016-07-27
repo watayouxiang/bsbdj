@@ -8,7 +8,7 @@
 
 #import "ttTopicCell.h"
 #import "ttTopic.h"
-#import "UIImageView+WebCache.h"
+#import <UIImageView+WebCache.h>
 #import "ttTopicPictureView.h"
 
 @interface ttTopicCell ()

@@ -7,11 +7,11 @@
 //
 
 #import "ttTopicVc.h"
-#import "AFNetworking.h"
-#import "UIImageView+WebCache.h"
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+#import <MJExtension.h>
+#import <MJRefresh.h>
 #import "ttTopic.h"
-#import "MJExtension.h"
-#import "MJRefresh.h"
 #import "ttTopicCell.h"
 
 @interface ttTopicVc ()

@@ -8,9 +8,9 @@
 
 #import "ttShowPictureVc.h"
 #import "ttTopic.h"
-#import "UIImageView+WebCache.h"
-#import "SVProgressHUD.h"
 #import "ttProgressView.h"
+#import <UIImageView+WebCache.h>
+#import <SVProgressHUD.h>
 
 @interface ttShowPictureVc ()
 @property (weak, nonatomic) IBOutlet ttProgressView *progressView;

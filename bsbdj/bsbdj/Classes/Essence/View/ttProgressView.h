@@ -6,7 +6,7 @@
 //  Copyright © 2016年 wata. All rights reserved.
 //
 
-#import "DALabeledCircularProgressView.h"
+#import <DALabeledCircularProgressView.h>
 
 @interface ttProgressView : DALabeledCircularProgressView
 

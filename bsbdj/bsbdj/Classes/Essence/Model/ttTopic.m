@@ -7,7 +7,7 @@
 //
 
 #import "ttTopic.h"
-#import "MJExtension.h"
+#import <MJExtension.h>
 
 @implementation ttTopic
 {

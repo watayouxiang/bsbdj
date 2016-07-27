@@ -11,10 +11,10 @@
 #import "ttRecommendCategoryCell.h"
 #import "ttRecommendUser.h"
 #import "ttRecommendUserCell.h"
-#import "AFNetworking.h"
-#import "SVProgressHUD.h"
-#import "MJRefresh.h"
-#import "MJExtension.h"
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <MJRefresh.h>
+#import <MJExtension.h>
 
 //获取左侧类别
 #define ttSelectedCategory self.categories[self.categoryTableView.indexPathForSelectedRow.row]

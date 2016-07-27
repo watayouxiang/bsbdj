@@ -8,7 +8,7 @@
 
 #import "ttRecommendTagCell.h"
 #import "ttRecommendTag.h"
-#import "UIImageView+WebCache.h"
+#import <UIImageView+WebCache.h>
 
 @interface ttRecommendTagCell()
 @property (weak, nonatomic) IBOutlet UIImageView *imageListImageView;

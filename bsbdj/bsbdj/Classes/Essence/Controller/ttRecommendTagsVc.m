@@ -9,9 +9,9 @@
 #import "ttRecommendTagsVc.h"
 #import "ttRecommendTag.h"
 #import "ttRecommendTagCell.h"
-#import "AFNetworking.h"
-#import "SVProgressHUD.h"
-#import "MJExtension.h"
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <MJExtension.h>
 
 @interface ttRecommendTagsVc ()
 @property (nonatomic, strong) NSArray *tags;//标签数据

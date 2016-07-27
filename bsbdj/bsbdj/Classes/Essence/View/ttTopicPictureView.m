@@ -8,7 +8,7 @@
 
 #import "ttTopicPictureView.h"
 #import "ttTopic.h"
-#import "UIImageView+WebCache.h"
+#import <UIImageView+WebCache.h>
 #import "ttProgressView.h"
 #import "ttShowPictureVc.h"
 

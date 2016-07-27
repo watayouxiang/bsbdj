@@ -8,7 +8,7 @@
 
 #import "ttRecommendUserCell.h"
 #import "ttRecommendUser.h"
-#import "UIImageView+WebCache.h"
+#import <UIImageView+WebCache.h>
 
 @interface ttRecommendUserCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *headerImageView;
