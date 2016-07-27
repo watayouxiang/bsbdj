@@ -109,7 +109,7 @@
 		BBC134EB1D3B5565007C052B /* bsbdj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bsbdj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC134EF1D3B5565007C052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBC134FF1D3B5565007C052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBC9D0CC1D4849F700691628 /* ttPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttPublishView.xib; sourceTree = "<group>"; };
+		BBC9D0CC1D4849F700691628 /* ttPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ttPublishView.xib; path = ../Controller/ttPublishView.xib; sourceTree = "<group>"; };
 		BBE210361D45E44D00A39858 /* ttRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTag.h; sourceTree = "<group>"; };
 		BBE210371D45E44D00A39858 /* ttRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttRecommendTag.m; sourceTree = "<group>"; };
 		BBE2103A1D45E46400A39858 /* ttRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTagCell.h; sourceTree = "<group>"; };
@@ -135,8 +135,8 @@
 		BBE2106A1D46041D00A39858 /* ttProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttProgressView.m; sourceTree = "<group>"; };
 		BBE210731D46058700A39858 /* ttTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicPictureView.xib; sourceTree = "<group>"; };
 		BBE210751D4606E900A39858 /* ttShowPictureVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttShowPictureVc.xib; sourceTree = "<group>"; };
-		BBE210771D461A4C00A39858 /* ttPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttPublishView.h; sourceTree = "<group>"; };
-		BBE210781D461A4C00A39858 /* ttPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttPublishView.m; sourceTree = "<group>"; };
+		BBE210771D461A4C00A39858 /* ttPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttPublishView.h; path = ../Controller/ttPublishView.h; sourceTree = "<group>"; };
+		BBE210781D461A4C00A39858 /* ttPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttPublishView.m; path = ../Controller/ttPublishView.m; sourceTree = "<group>"; };
 		EBA854FF7CD1D2F0849DAE53 /* Pods-bsbdj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bsbdj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bsbdj/Pods-bsbdj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -296,9 +296,6 @@
 				BB98E6481D3D23CF00683672 /* ttNavigationController.m */,
 				BB98E6491D3D23CF00683672 /* ttTabBarController.h */,
 				BB98E64A1D3D23CF00683672 /* ttTabBarController.m */,
-				BBE210771D461A4C00A39858 /* ttPublishView.h */,
-				BBE210781D461A4C00A39858 /* ttPublishView.m */,
-				BBC9D0CC1D4849F700691628 /* ttPublishView.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,6 +310,9 @@
 		BB98E64E1D3D23CF00683672 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BBE210771D461A4C00A39858 /* ttPublishView.h */,
+				BBE210781D461A4C00A39858 /* ttPublishView.m */,
+				BBC9D0CC1D4849F700691628 /* ttPublishView.xib */,
 				BB98E64F1D3D23CF00683672 /* ttTabBar.h */,
 				BB98E6501D3D23CF00683672 /* ttTabBar.m */,
 				BB0D2A2B1D3F644400C66D3D /* ttGuideView.h */,

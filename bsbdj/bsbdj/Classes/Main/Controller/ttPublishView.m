@@ -123,7 +123,9 @@ static UIWindow *window_;
 }
 
 - (IBAction)cancel {
-    [self cancelWithCompletionBlock:nil];
+    [self cancelWithCompletionBlock:^{
+        ttLog(@"取消");
+    }];
 }
 
 /**
