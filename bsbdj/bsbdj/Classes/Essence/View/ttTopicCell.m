@@ -10,6 +10,8 @@
 #import "ttTopic.h"
 #import <UIImageView+WebCache.h>
 #import "ttTopicPictureView.h"
+#import "ttTopicVoiceView.h"
+#import "ttTopicVideoView.h"
 
 @interface ttTopicCell ()
 /** 头像 */
@@ -32,11 +34,16 @@
 @property (weak, nonatomic) IBOutlet UILabel *text_label;
 /** 图片帖子中间的内容 */
 @property (nonatomic, weak) ttTopicPictureView *pictureView;
+/** 声音帖子中间的内容 */
+@property (nonatomic, weak) ttTopicVoiceView *voiceView;
+/** 视频帖子中间的内容 */
+@property (nonatomic, weak) ttTopicVideoView *videoView;
+
 @end
 
 @implementation ttTopicCell
 
-#pragma mark - 懒加载pictureView
+#pragma mark - 懒加载view
 - (ttTopicPictureView *)pictureView {
     if (!_pictureView) {
         ttTopicPictureView *pictureView = [ttTopicPictureView pictureView];
@@ -44,6 +51,24 @@
         _pictureView = pictureView;
     }
     return _pictureView;
+}
+
+- (ttTopicVoiceView *)voiceView {
+    if (!_voiceView) {
+        ttTopicVoiceView *voiceView = [ttTopicVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+
+- (ttTopicVideoView *)videoView{
+    if (!_videoView) {
+        ttTopicVideoView *videoView = [ttTopicVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
 }
 
 #pragma mark - 加载xib
@@ -82,13 +107,31 @@
     
     // 根据帖子类型添加对应的内容到cell的中间
     if (topic.type == ttTopicTypePicture) { // 图片帖子
+        self.pictureView.hidden = NO;
         self.pictureView.topic = topic;
         self.pictureView.frame = topic.pictureF;
-    } else if (topic.type == ttTopicTypeVoice) { // 声音帖子
         
-        //...
-    }
-}
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
+    } else if (topic.type == ttTopicTypeVoice) { // 声音帖子
+        self.voiceView.hidden = NO;
+        self.voiceView.topic = topic;
+        self.voiceView.frame = topic.voiceF;
+        
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+    } else if (topic.type == ttTopicTypeVideo) { // 视频帖子
+        self.videoView.hidden = NO;
+        self.videoView.topic = topic;
+        self.videoView.frame = topic.videoF;
+        
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
+    } else { // 段子帖子
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
+    }}
 
 #pragma mark - 设置底部按钮文字
 - (void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder {

@@ -37,6 +37,10 @@
 		BBB86F2C1D41F6DD00C8DA3A /* ttTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */; };
 		BBC134F01D3B5565007C052B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC134EF1D3B5565007C052B /* main.m */; };
 		BBC9D0CD1D4849F700691628 /* ttPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC9D0CC1D4849F700691628 /* ttPublishView.xib */; };
+		BBC9D0D41D48825C00691628 /* ttTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC9D0CF1D48825C00691628 /* ttTopicVoiceView.m */; };
+		BBC9D0D51D48825C00691628 /* ttTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC9D0D01D48825C00691628 /* ttTopicVoiceView.xib */; };
+		BBC9D0D61D48825C00691628 /* ttTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC9D0D21D48825C00691628 /* ttTopicVideoView.m */; };
+		BBC9D0D71D48825C00691628 /* ttTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC9D0D31D48825C00691628 /* ttTopicVideoView.xib */; };
 		BBE210381D45E44D00A39858 /* ttRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210371D45E44D00A39858 /* ttRecommendTag.m */; };
 		BBE2103F1D45E46400A39858 /* ttRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2103B1D45E46400A39858 /* ttRecommendTagCell.m */; };
 		BBE210401D45E46400A39858 /* ttRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE2103C1D45E46400A39858 /* ttRecommendTagCell.xib */; };
@@ -110,6 +114,12 @@
 		BBC134EF1D3B5565007C052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBC134FF1D3B5565007C052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBC9D0CC1D4849F700691628 /* ttPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ttPublishView.xib; path = ../Controller/ttPublishView.xib; sourceTree = "<group>"; };
+		BBC9D0CE1D48825C00691628 /* ttTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTopicVoiceView.h; sourceTree = "<group>"; };
+		BBC9D0CF1D48825C00691628 /* ttTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTopicVoiceView.m; sourceTree = "<group>"; };
+		BBC9D0D01D48825C00691628 /* ttTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicVoiceView.xib; sourceTree = "<group>"; };
+		BBC9D0D11D48825C00691628 /* ttTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTopicVideoView.h; sourceTree = "<group>"; };
+		BBC9D0D21D48825C00691628 /* ttTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTopicVideoView.m; sourceTree = "<group>"; };
+		BBC9D0D31D48825C00691628 /* ttTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicVideoView.xib; sourceTree = "<group>"; };
 		BBE210361D45E44D00A39858 /* ttRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTag.h; sourceTree = "<group>"; };
 		BBE210371D45E44D00A39858 /* ttRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttRecommendTag.m; sourceTree = "<group>"; };
 		BBE2103A1D45E46400A39858 /* ttRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTagCell.h; sourceTree = "<group>"; };
@@ -450,6 +460,12 @@
 				BBE2105F1D4602D200A39858 /* ttTopicPictureView.h */,
 				BBE210601D4602D200A39858 /* ttTopicPictureView.m */,
 				BBE210731D46058700A39858 /* ttTopicPictureView.xib */,
+				BBC9D0CE1D48825C00691628 /* ttTopicVoiceView.h */,
+				BBC9D0CF1D48825C00691628 /* ttTopicVoiceView.m */,
+				BBC9D0D01D48825C00691628 /* ttTopicVoiceView.xib */,
+				BBC9D0D11D48825C00691628 /* ttTopicVideoView.h */,
+				BBC9D0D21D48825C00691628 /* ttTopicVideoView.m */,
+				BBC9D0D31D48825C00691628 /* ttTopicVideoView.xib */,
 				BBE210691D46041D00A39858 /* ttProgressView.h */,
 				BBE2106A1D46041D00A39858 /* ttProgressView.m */,
 			);
@@ -521,6 +537,7 @@
 				BB0538341D40D4C500840432 /* ttLoginRegisterVc.xib in Resources */,
 				BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */,
 				BBC9D0CD1D4849F700691628 /* ttPublishView.xib in Resources */,
+				BBC9D0D51D48825C00691628 /* ttTopicVoiceView.xib in Resources */,
 				BB98E6651D3D23CF00683672 /* ttRecommendCategoryCell.xib in Resources */,
 				BB98E65F1D3D23CF00683672 /* ttFriendTrendsVc.xib in Resources */,
 				BB98E6611D3D23CF00683672 /* ttRecommendVc.xib in Resources */,
@@ -528,6 +545,7 @@
 				BB98E6671D3D23CF00683672 /* ttRecommendUserCell.xib in Resources */,
 				BBE2105E1D46026C00A39858 /* ttTopicCell.xib in Resources */,
 				BBE210401D45E46400A39858 /* ttRecommendTagCell.xib in Resources */,
+				BBC9D0D71D48825C00691628 /* ttTopicVideoView.xib in Resources */,
 				BBE210761D4606E900A39858 /* ttShowPictureVc.xib in Resources */,
 				BBE2105C1D45FB8400A39858 /* Assets.xcassets in Resources */,
 			);
@@ -596,10 +614,12 @@
 				BB98E6661D3D23CF00683672 /* ttRecommendUserCell.m in Sources */,
 				BB98E68A1D3D23CF00683672 /* ttNewVc.m in Sources */,
 				BBE210381D45E44D00A39858 /* ttRecommendTag.m in Sources */,
+				BBC9D0D41D48825C00691628 /* ttTopicVoiceView.m in Sources */,
 				BB98E6891D3D23CF00683672 /* ttMeVc.m in Sources */,
 				BBE210481D45E58F00A39858 /* ttTopicCell.m in Sources */,
 				BB98E6F51D3E1A4200683672 /* ttRecommendTagsVc.m in Sources */,
 				BB98E6631D3D23CF00683672 /* ttRecommendUser.m in Sources */,
+				BBC9D0D61D48825C00691628 /* ttTopicVideoView.m in Sources */,
 				BB0D2A2D1D3F644400C66D3D /* ttGuideView.m in Sources */,
 				BB98E6601D3D23CF00683672 /* ttRecommendVc.m in Sources */,
 				BBE210581D45EF8E00A39858 /* NSDate+ttExtension.m in Sources */,

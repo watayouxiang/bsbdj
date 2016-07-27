@@ -95,7 +95,21 @@
             
             _cellHeight += pictureH + ttTopicCellMargin;
         } else if (self.type == ttTopicTypeVoice) { // 声音帖子
-            //...
+            CGFloat voiceX = ttTopicCellMargin;
+            CGFloat voiceY = ttTopicCellTextY + textH + ttTopicCellMargin;
+            CGFloat voiceW = maxSize.width;
+            CGFloat voiceH = voiceW * self.height / self.width;
+            _voiceF = CGRectMake(voiceX, voiceY, voiceW, voiceH);
+            
+            _cellHeight += voiceH + ttTopicCellMargin;
+        } else if (self.type == ttTopicTypeVideo) { // 视频帖子
+            CGFloat videoX = ttTopicCellMargin;
+            CGFloat videoY = ttTopicCellTextY + textH + ttTopicCellMargin;
+            CGFloat videoW = maxSize.width;
+            CGFloat videoH = videoW * self.height / self.width;
+            _videoF = CGRectMake(videoX, videoY, videoW, videoH);
+            
+            _cellHeight += videoH + ttTopicCellMargin;
         }
         
         //3. 底部工具条的高度
