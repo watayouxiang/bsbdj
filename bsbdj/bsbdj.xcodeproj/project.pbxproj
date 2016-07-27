@@ -36,6 +36,7 @@
 		BBB86F291D41F5B300C8DA3A /* ttVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */; };
 		BBB86F2C1D41F6DD00C8DA3A /* ttTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */; };
 		BBC134F01D3B5565007C052B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC134EF1D3B5565007C052B /* main.m */; };
+		BBC9D0CD1D4849F700691628 /* ttPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC9D0CC1D4849F700691628 /* ttPublishView.xib */; };
 		BBE210381D45E44D00A39858 /* ttRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210371D45E44D00A39858 /* ttRecommendTag.m */; };
 		BBE2103F1D45E46400A39858 /* ttRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2103B1D45E46400A39858 /* ttRecommendTagCell.m */; };
 		BBE210401D45E46400A39858 /* ttRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE2103C1D45E46400A39858 /* ttRecommendTagCell.xib */; };
@@ -51,8 +52,7 @@
 		BBE2106B1D46041D00A39858 /* ttProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2106A1D46041D00A39858 /* ttProgressView.m */; };
 		BBE210741D46058700A39858 /* ttTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE210731D46058700A39858 /* ttTopicPictureView.xib */; };
 		BBE210761D4606E900A39858 /* ttShowPictureVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE210751D4606E900A39858 /* ttShowPictureVc.xib */; };
-		BBE2107A1D461A4C00A39858 /* ttPublishVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210781D461A4C00A39858 /* ttPublishVc.m */; };
-		BBE2107D1D461AA400A39858 /* ttPublishVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE2107C1D461AA400A39858 /* ttPublishVc.xib */; };
+		BBE2107A1D461A4C00A39858 /* ttPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210781D461A4C00A39858 /* ttPublishView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +109,7 @@
 		BBC134EB1D3B5565007C052B /* bsbdj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bsbdj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC134EF1D3B5565007C052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBC134FF1D3B5565007C052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC9D0CC1D4849F700691628 /* ttPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttPublishView.xib; sourceTree = "<group>"; };
 		BBE210361D45E44D00A39858 /* ttRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTag.h; sourceTree = "<group>"; };
 		BBE210371D45E44D00A39858 /* ttRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttRecommendTag.m; sourceTree = "<group>"; };
 		BBE2103A1D45E46400A39858 /* ttRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTagCell.h; sourceTree = "<group>"; };
@@ -134,9 +135,8 @@
 		BBE2106A1D46041D00A39858 /* ttProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttProgressView.m; sourceTree = "<group>"; };
 		BBE210731D46058700A39858 /* ttTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicPictureView.xib; sourceTree = "<group>"; };
 		BBE210751D4606E900A39858 /* ttShowPictureVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttShowPictureVc.xib; sourceTree = "<group>"; };
-		BBE210771D461A4C00A39858 /* ttPublishVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttPublishVc.h; sourceTree = "<group>"; };
-		BBE210781D461A4C00A39858 /* ttPublishVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttPublishVc.m; sourceTree = "<group>"; };
-		BBE2107C1D461AA400A39858 /* ttPublishVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttPublishVc.xib; sourceTree = "<group>"; };
+		BBE210771D461A4C00A39858 /* ttPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttPublishView.h; sourceTree = "<group>"; };
+		BBE210781D461A4C00A39858 /* ttPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttPublishView.m; sourceTree = "<group>"; };
 		EBA854FF7CD1D2F0849DAE53 /* Pods-bsbdj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bsbdj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bsbdj/Pods-bsbdj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -296,9 +296,9 @@
 				BB98E6481D3D23CF00683672 /* ttNavigationController.m */,
 				BB98E6491D3D23CF00683672 /* ttTabBarController.h */,
 				BB98E64A1D3D23CF00683672 /* ttTabBarController.m */,
-				BBE210771D461A4C00A39858 /* ttPublishVc.h */,
-				BBE210781D461A4C00A39858 /* ttPublishVc.m */,
-				BBE2107C1D461AA400A39858 /* ttPublishVc.xib */,
+				BBE210771D461A4C00A39858 /* ttPublishView.h */,
+				BBE210781D461A4C00A39858 /* ttPublishView.m */,
+				BBC9D0CC1D4849F700691628 /* ttPublishView.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -520,6 +520,7 @@
 			files = (
 				BB0538341D40D4C500840432 /* ttLoginRegisterVc.xib in Resources */,
 				BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */,
+				BBC9D0CD1D4849F700691628 /* ttPublishView.xib in Resources */,
 				BB98E6651D3D23CF00683672 /* ttRecommendCategoryCell.xib in Resources */,
 				BB98E65F1D3D23CF00683672 /* ttFriendTrendsVc.xib in Resources */,
 				BB98E6611D3D23CF00683672 /* ttRecommendVc.xib in Resources */,
@@ -529,7 +530,6 @@
 				BBE210401D45E46400A39858 /* ttRecommendTagCell.xib in Resources */,
 				BBE210761D4606E900A39858 /* ttShowPictureVc.xib in Resources */,
 				BBE2105C1D45FB8400A39858 /* Assets.xcassets in Resources */,
-				BBE2107D1D461AA400A39858 /* ttPublishVc.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,7 +619,7 @@
 				BB98E6861D3D23CF00683672 /* ttTabBarController.m in Sources */,
 				BBE210671D4603EB00A39858 /* ttShowPictureVc.m in Sources */,
 				BBE210441D45E56F00A39858 /* ttTopicVc.m in Sources */,
-				BBE2107A1D461A4C00A39858 /* ttPublishVc.m in Sources */,
+				BBE2107A1D461A4C00A39858 /* ttPublishView.m in Sources */,
 				BB98E65D1D3D23CF00683672 /* ttEssenceVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 //
 
 #import "ttTabBar.h"
-#import "ttPublishVc.h"
+#import "ttPublishView.h"
 
 @interface ttTabBar()
 @property (nonatomic, weak) UIButton *publishButton;//发布按钮
@@ -33,12 +33,12 @@
     return self;
 }
 
+
 /**
  *  发布btn点击事件
  */
 - (void)publishClick {
-    ttPublishVc *publish = [[ttPublishVc alloc] init];
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publish animated:NO completion:nil];
+    [ttPublishView show];
 }
 
 -(void)layoutSubviews{

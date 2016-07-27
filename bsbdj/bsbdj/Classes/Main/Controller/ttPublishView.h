@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ttPublishVc : UIViewController
+@interface ttPublishView : UIView
+
++ (void)show;
 
 @end
