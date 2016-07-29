@@ -8,6 +8,8 @@
 
 #import "ttTopic.h"
 #import <MJExtension.h>
+#import "ttComment.h"
+#import "ttUser.h"
 
 @implementation ttTopic
 {
@@ -27,7 +29,9 @@
     return @{
              @"small_image" : @"image0",
              @"large_image" : @"image1",
-             @"middle_image" : @"image2"
+             @"middle_image" : @"image2",
+             @"ID" : @"id",
+             @"top_cmt" : @"top_cmt[0]"
              };
 }
 
@@ -112,7 +116,14 @@
             _cellHeight += videoH + ttTopicCellMargin;
         }
         
-        //3. 底部工具条的高度
+        // 3. 如果有最热评论
+        if (self.top_cmt) {
+            NSString *content = [NSString stringWithFormat:@"%@ : %@", self.top_cmt.user.username, self.top_cmt.content];
+            CGFloat contentH = [content boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]} context:nil].size.height;
+            _cellHeight += ttTopicCellTopCmtTitleH + contentH + ttTopicCellMargin;
+        }
+        
+        //4. 底部工具条的高度
         CGFloat cellBottonBarH = ttTopicCellBottomBarH + ttTopicCellMargin;
         
         // cell的最终高度

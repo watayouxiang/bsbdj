@@ -24,3 +24,10 @@ CGFloat const ttTopicCellBottomBarH = 44;
 CGFloat const ttTopicCellPictureMaxH = 1000;
 /** 精华-cell-图片帖子一旦超过最大高度,就是用BreakH */
 CGFloat const ttTopicCellPictureBreakH = 250;
+
+/** ttUser模型-性别属性值 */
+NSString * const ttUserSexMale = @"m";
+NSString * const ttUserSexFemale = @"f";
+
+/** 精华-cell-最热评论标题的高度 */
+CGFloat const ttTopicCellTopCmtTitleH = 20;

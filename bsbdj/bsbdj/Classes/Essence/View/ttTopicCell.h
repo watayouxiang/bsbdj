@@ -14,4 +14,6 @@
 /** 帖子数据 */
 @property (nonatomic, strong) ttTopic *topic;
 
++ (instancetype)cell;
+
 @end

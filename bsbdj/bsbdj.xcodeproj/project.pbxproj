@@ -12,6 +12,16 @@
 		BB0538341D40D4C500840432 /* ttLoginRegisterVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0538321D40D4C500840432 /* ttLoginRegisterVc.xib */; };
 		BB0D2A2D1D3F644400C66D3D /* ttGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */; };
 		BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0D2A301D3F647500C66D3D /* ttGuideView.xib */; };
+		BB963D261D4AE31F00C71C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB963D251D4AE31F00C71C52 /* Assets.xcassets */; };
+		BB963D2A1D4AE53C00C71C52 /* ttCommentVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB963D281D4AE53C00C71C52 /* ttCommentVc.m */; };
+		BB963D2D1D4AE55200C71C52 /* ttCommentVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB963D2C1D4AE55200C71C52 /* ttCommentVc.xib */; };
+		BB963D301D4AE5E100C71C52 /* ttUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB963D2F1D4AE5E100C71C52 /* ttUser.m */; };
+		BB963D331D4AE5F600C71C52 /* ttComment.m in Sources */ = {isa = PBXBuildFile; fileRef = BB963D321D4AE5F600C71C52 /* ttComment.m */; };
+		BB963D361D4AE68E00C71C52 /* ttCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB963D351D4AE68E00C71C52 /* ttCommentHeaderView.m */; };
+		BB963D3A1D4AE85C00C71C52 /* ttCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB963D381D4AE85C00C71C52 /* ttCommentCell.m */; };
+		BB963D3D1D4AE86D00C71C52 /* ttCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB963D3C1D4AE86D00C71C52 /* ttCommentCell.xib */; };
+		BB963D3F1D4AF11100C71C52 /* ttTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB963D3E1D4AF11100C71C52 /* ttTopicCell.xib */; };
+		BB963D421D4B063500C71C52 /* ttTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BB963D411D4B063500C71C52 /* ttTopWindow.m */; };
 		BB98E65D1D3D23CF00683672 /* ttEssenceVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E5ED1D3D23CF00683672 /* ttEssenceVc.m */; };
 		BB98E65E1D3D23CF00683672 /* ttFriendTrendsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E5F31D3D23CF00683672 /* ttFriendTrendsVc.m */; };
 		BB98E65F1D3D23CF00683672 /* ttFriendTrendsVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB98E5F41D3D23CF00683672 /* ttFriendTrendsVc.xib */; };
@@ -49,8 +59,6 @@
 		BBE2104C1D45E60F00A39858 /* ttTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2104B1D45E60F00A39858 /* ttTopic.m */; };
 		BBE210521D45EB5A00A39858 /* ttConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210511D45EB5A00A39858 /* ttConst.m */; };
 		BBE210581D45EF8E00A39858 /* NSDate+ttExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210571D45EF8E00A39858 /* NSDate+ttExtension.m */; };
-		BBE2105C1D45FB8400A39858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE2105B1D45FB8400A39858 /* Assets.xcassets */; };
-		BBE2105E1D46026C00A39858 /* ttTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE2105D1D46026C00A39858 /* ttTopicCell.xib */; };
 		BBE210611D4602D200A39858 /* ttTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210601D4602D200A39858 /* ttTopicPictureView.m */; };
 		BBE210671D4603EB00A39858 /* ttShowPictureVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE210651D4603EB00A39858 /* ttShowPictureVc.m */; };
 		BBE2106B1D46041D00A39858 /* ttProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2106A1D46041D00A39858 /* ttProgressView.m */; };
@@ -67,6 +75,22 @@
 		BB0D2A2B1D3F644400C66D3D /* ttGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttGuideView.h; sourceTree = "<group>"; };
 		BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttGuideView.m; sourceTree = "<group>"; };
 		BB0D2A301D3F647500C66D3D /* ttGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttGuideView.xib; sourceTree = "<group>"; };
+		BB963D251D4AE31F00C71C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB963D271D4AE53C00C71C52 /* ttCommentVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttCommentVc.h; sourceTree = "<group>"; };
+		BB963D281D4AE53C00C71C52 /* ttCommentVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttCommentVc.m; sourceTree = "<group>"; };
+		BB963D2C1D4AE55200C71C52 /* ttCommentVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttCommentVc.xib; sourceTree = "<group>"; };
+		BB963D2E1D4AE5E100C71C52 /* ttUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttUser.h; sourceTree = "<group>"; };
+		BB963D2F1D4AE5E100C71C52 /* ttUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttUser.m; sourceTree = "<group>"; };
+		BB963D311D4AE5F600C71C52 /* ttComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttComment.h; sourceTree = "<group>"; };
+		BB963D321D4AE5F600C71C52 /* ttComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttComment.m; sourceTree = "<group>"; };
+		BB963D341D4AE68E00C71C52 /* ttCommentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttCommentHeaderView.h; sourceTree = "<group>"; };
+		BB963D351D4AE68E00C71C52 /* ttCommentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttCommentHeaderView.m; sourceTree = "<group>"; };
+		BB963D371D4AE85C00C71C52 /* ttCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttCommentCell.h; sourceTree = "<group>"; };
+		BB963D381D4AE85C00C71C52 /* ttCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttCommentCell.m; sourceTree = "<group>"; };
+		BB963D3C1D4AE86D00C71C52 /* ttCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttCommentCell.xib; sourceTree = "<group>"; };
+		BB963D3E1D4AF11100C71C52 /* ttTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicCell.xib; sourceTree = "<group>"; };
+		BB963D401D4B063500C71C52 /* ttTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTopWindow.h; sourceTree = "<group>"; };
+		BB963D411D4B063500C71C52 /* ttTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTopWindow.m; sourceTree = "<group>"; };
 		BB98E5EC1D3D23CF00683672 /* ttEssenceVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttEssenceVc.h; sourceTree = "<group>"; };
 		BB98E5ED1D3D23CF00683672 /* ttEssenceVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttEssenceVc.m; sourceTree = "<group>"; };
 		BB98E5F21D3D23CF00683672 /* ttFriendTrendsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttFriendTrendsVc.h; sourceTree = "<group>"; };
@@ -135,8 +159,6 @@
 		BBE210511D45EB5A00A39858 /* ttConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttConst.m; sourceTree = "<group>"; };
 		BBE210561D45EF8E00A39858 /* NSDate+ttExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ttExtension.h"; sourceTree = "<group>"; };
 		BBE210571D45EF8E00A39858 /* NSDate+ttExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ttExtension.m"; sourceTree = "<group>"; };
-		BBE2105B1D45FB8400A39858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BBE2105D1D46026C00A39858 /* ttTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicCell.xib; sourceTree = "<group>"; };
 		BBE2105F1D4602D200A39858 /* ttTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTopicPictureView.h; sourceTree = "<group>"; };
 		BBE210601D4602D200A39858 /* ttTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTopicPictureView.m; sourceTree = "<group>"; };
 		BBE210641D4603EB00A39858 /* ttShowPictureVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttShowPictureVc.h; sourceTree = "<group>"; };
@@ -210,6 +232,9 @@
 				BB98E6F41D3E1A4200683672 /* ttRecommendTagsVc.m */,
 				BBE210421D45E56F00A39858 /* ttTopicVc.h */,
 				BBE210431D45E56F00A39858 /* ttTopicVc.m */,
+				BB963D271D4AE53C00C71C52 /* ttCommentVc.h */,
+				BB963D281D4AE53C00C71C52 /* ttCommentVc.m */,
+				BB963D2C1D4AE55200C71C52 /* ttCommentVc.xib */,
 				BBE210641D4603EB00A39858 /* ttShowPictureVc.h */,
 				BBE210651D4603EB00A39858 /* ttShowPictureVc.m */,
 				BBE210751D4606E900A39858 /* ttShowPictureVc.xib */,
@@ -328,6 +353,8 @@
 				BB0D2A2B1D3F644400C66D3D /* ttGuideView.h */,
 				BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */,
 				BB0D2A301D3F647500C66D3D /* ttGuideView.xib */,
+				BB963D401D4B063500C71C52 /* ttTopWindow.h */,
+				BB963D411D4B063500C71C52 /* ttTopWindow.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -428,7 +455,7 @@
 		BBC134EE1D3B5565007C052B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BBE2105B1D45FB8400A39858 /* Assets.xcassets */,
+				BB963D251D4AE31F00C71C52 /* Assets.xcassets */,
 				BB98E68B1D3D24BF00683672 /* AppDelegate.h */,
 				BB98E68C1D3D24BF00683672 /* AppDelegate.m */,
 				BBC134FF1D3B5565007C052B /* Info.plist */,
@@ -444,6 +471,10 @@
 				BBE210371D45E44D00A39858 /* ttRecommendTag.m */,
 				BBE2104A1D45E60F00A39858 /* ttTopic.h */,
 				BBE2104B1D45E60F00A39858 /* ttTopic.m */,
+				BB963D2E1D4AE5E100C71C52 /* ttUser.h */,
+				BB963D2F1D4AE5E100C71C52 /* ttUser.m */,
+				BB963D311D4AE5F600C71C52 /* ttComment.h */,
+				BB963D321D4AE5F600C71C52 /* ttComment.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -456,7 +487,7 @@
 				BBE2103C1D45E46400A39858 /* ttRecommendTagCell.xib */,
 				BBE210451D45E58F00A39858 /* ttTopicCell.h */,
 				BBE210461D45E58F00A39858 /* ttTopicCell.m */,
-				BBE2105D1D46026C00A39858 /* ttTopicCell.xib */,
+				BB963D3E1D4AF11100C71C52 /* ttTopicCell.xib */,
 				BBE2105F1D4602D200A39858 /* ttTopicPictureView.h */,
 				BBE210601D4602D200A39858 /* ttTopicPictureView.m */,
 				BBE210731D46058700A39858 /* ttTopicPictureView.xib */,
@@ -468,6 +499,11 @@
 				BBC9D0D31D48825C00691628 /* ttTopicVideoView.xib */,
 				BBE210691D46041D00A39858 /* ttProgressView.h */,
 				BBE2106A1D46041D00A39858 /* ttProgressView.m */,
+				BB963D341D4AE68E00C71C52 /* ttCommentHeaderView.h */,
+				BB963D351D4AE68E00C71C52 /* ttCommentHeaderView.m */,
+				BB963D371D4AE85C00C71C52 /* ttCommentCell.h */,
+				BB963D381D4AE85C00C71C52 /* ttCommentCell.m */,
+				BB963D3C1D4AE86D00C71C52 /* ttCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -538,16 +574,18 @@
 				BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */,
 				BBC9D0CD1D4849F700691628 /* ttPublishView.xib in Resources */,
 				BBC9D0D51D48825C00691628 /* ttTopicVoiceView.xib in Resources */,
+				BB963D3D1D4AE86D00C71C52 /* ttCommentCell.xib in Resources */,
+				BB963D261D4AE31F00C71C52 /* Assets.xcassets in Resources */,
 				BB98E6651D3D23CF00683672 /* ttRecommendCategoryCell.xib in Resources */,
 				BB98E65F1D3D23CF00683672 /* ttFriendTrendsVc.xib in Resources */,
 				BB98E6611D3D23CF00683672 /* ttRecommendVc.xib in Resources */,
 				BBE210741D46058700A39858 /* ttTopicPictureView.xib in Resources */,
 				BB98E6671D3D23CF00683672 /* ttRecommendUserCell.xib in Resources */,
-				BBE2105E1D46026C00A39858 /* ttTopicCell.xib in Resources */,
+				BB963D2D1D4AE55200C71C52 /* ttCommentVc.xib in Resources */,
+				BB963D3F1D4AF11100C71C52 /* ttTopicCell.xib in Resources */,
 				BBE210401D45E46400A39858 /* ttRecommendTagCell.xib in Resources */,
 				BBC9D0D71D48825C00691628 /* ttTopicVideoView.xib in Resources */,
 				BBE210761D4606E900A39858 /* ttShowPictureVc.xib in Resources */,
-				BBE2105C1D45FB8400A39858 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +653,7 @@
 				BB98E68A1D3D23CF00683672 /* ttNewVc.m in Sources */,
 				BBE210381D45E44D00A39858 /* ttRecommendTag.m in Sources */,
 				BBC9D0D41D48825C00691628 /* ttTopicVoiceView.m in Sources */,
+				BB963D331D4AE5F600C71C52 /* ttComment.m in Sources */,
 				BB98E6891D3D23CF00683672 /* ttMeVc.m in Sources */,
 				BBE210481D45E58F00A39858 /* ttTopicCell.m in Sources */,
 				BB98E6F51D3E1A4200683672 /* ttRecommendTagsVc.m in Sources */,
@@ -622,16 +661,20 @@
 				BBC9D0D61D48825C00691628 /* ttTopicVideoView.m in Sources */,
 				BB0D2A2D1D3F644400C66D3D /* ttGuideView.m in Sources */,
 				BB98E6601D3D23CF00683672 /* ttRecommendVc.m in Sources */,
+				BB963D2A1D4AE53C00C71C52 /* ttCommentVc.m in Sources */,
 				BBE210581D45EF8E00A39858 /* NSDate+ttExtension.m in Sources */,
 				BB98E6851D3D23CF00683672 /* ttNavigationController.m in Sources */,
 				BBC134F01D3B5565007C052B /* main.m in Sources */,
 				BB98E68D1D3D24BF00683672 /* AppDelegate.m in Sources */,
+				BB963D361D4AE68E00C71C52 /* ttCommentHeaderView.m in Sources */,
 				BB98E6831D3D23CF00683672 /* UIBarButtonItem+ttExtension.m in Sources */,
 				BBE2103F1D45E46400A39858 /* ttRecommendTagCell.m in Sources */,
 				BB98E6871D3D23CF00683672 /* Foundation+Log.m in Sources */,
 				BB98E6881D3D23CF00683672 /* ttTabBar.m in Sources */,
+				BB963D421D4B063500C71C52 /* ttTopWindow.m in Sources */,
 				BBE210521D45EB5A00A39858 /* ttConst.m in Sources */,
 				BBE2106B1D46041D00A39858 /* ttProgressView.m in Sources */,
+				BB963D3A1D4AE85C00C71C52 /* ttCommentCell.m in Sources */,
 				BBE210611D4602D200A39858 /* ttTopicPictureView.m in Sources */,
 				BB98E6641D3D23CF00683672 /* ttRecommendCategoryCell.m in Sources */,
 				BB98E6841D3D23CF00683672 /* UIView+ttExtension.m in Sources */,
@@ -639,6 +682,7 @@
 				BB98E6861D3D23CF00683672 /* ttTabBarController.m in Sources */,
 				BBE210671D4603EB00A39858 /* ttShowPictureVc.m in Sources */,
 				BBE210441D45E56F00A39858 /* ttTopicVc.m in Sources */,
+				BB963D301D4AE5E100C71C52 /* ttUser.m in Sources */,
 				BBE2107A1D461A4C00A39858 /* ttPublishView.m in Sources */,
 				BB98E65D1D3D23CF00683672 /* ttEssenceVc.m in Sources */,
 			);

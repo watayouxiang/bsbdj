@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@class ttComment;
 
 @interface ttTopic : NSObject
-
+/** id */
+@property (nonatomic, copy) NSString *ID;
 /** 名称 */
 @property (nonatomic, copy) NSString *name;
 /** 头像 */
@@ -46,6 +48,8 @@
 @property (nonatomic, assign) NSInteger videotime;
 /** 播放次数 */
 @property (nonatomic, assign) NSInteger playcount;
+/** 最热评论 */
+@property (nonatomic, strong) ttComment *top_cmt;
 
 /****** 额外的辅助属性 ******/
 

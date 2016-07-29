@@ -12,6 +12,8 @@
 #import "ttTopicPictureView.h"
 #import "ttTopicVoiceView.h"
 #import "ttTopicVideoView.h"
+#import "ttComment.h"
+#import "ttUser.h"
 
 @interface ttTopicCell ()
 /** 头像 */
@@ -38,10 +40,18 @@
 @property (nonatomic, weak) ttTopicVoiceView *voiceView;
 /** 视频帖子中间的内容 */
 @property (nonatomic, weak) ttTopicVideoView *videoView;
+/** 最热评论的内容 */
+@property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
+/** 最热评论的整体 */
+@property (weak, nonatomic) IBOutlet UIView *topCmtView;
 
 @end
 
 @implementation ttTopicCell
+
++ (instancetype)cell {
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+}
 
 #pragma mark - 懒加载view
 - (ttTopicPictureView *)pictureView {
@@ -131,7 +141,16 @@
         self.videoView.hidden = YES;
         self.voiceView.hidden = YES;
         self.pictureView.hidden = YES;
-    }}
+    }
+    
+    // 处理最热评论
+    if (topic.top_cmt) {
+        self.topCmtView.hidden = NO;
+        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@", topic.top_cmt.user.username, topic.top_cmt.content];
+    } else {
+        self.topCmtView.hidden = YES;
+    }
+}
 
 #pragma mark - 设置底部按钮文字
 - (void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder {
@@ -148,10 +167,15 @@
     
     frame.origin.x = ttTopicCellMargin;
     frame.size.width -= 2 * ttTopicCellMargin;
-    frame.size.height -= ttTopicCellMargin;
+    frame.size.height = self.topic.cellHeight - ttTopicCellMargin;
     frame.origin.y += ttTopicCellMargin;
     
     [super setFrame:frame];
+}
+
+- (IBAction)more {
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"收藏", @"举报", nil];
+    [sheet showInView:self.window];
 }
 
 

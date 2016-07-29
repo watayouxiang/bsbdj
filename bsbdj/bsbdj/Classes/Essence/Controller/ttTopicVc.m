@@ -13,6 +13,7 @@
 #import <MJRefresh.h>
 #import "ttTopic.h"
 #import "ttTopicCell.h"
+#import "ttCommentVc.h"
 
 @interface ttTopicVc ()
 /** 帖子数据 */
@@ -204,6 +205,13 @@ static NSString * const ttTopicCellId = @"topic";
     
     // 返回这个模型对应的cell高度
     return topic.cellHeight;
+}
+
+//选中cell
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ttCommentVc *commentVc = [[ttCommentVc alloc] init];
+    commentVc.topic = self.topics[indexPath.row];
+    [self.navigationController pushViewController:commentVc animated:YES];
 }
 
 @end
