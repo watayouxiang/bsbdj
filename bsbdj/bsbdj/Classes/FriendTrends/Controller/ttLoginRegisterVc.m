@@ -15,9 +15,19 @@
 
 @implementation ttLoginRegisterVc
 
-- (void)viewDidLoad {
+- (void)viewDidLoad{
     [super viewDidLoad];
+    
+}
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    /**
+     配置文件里设置: View controller-based status bar appearance = NO
+     这样状态栏的颜色就不再是由ViewController处理了, 而是由UIApplication来处理
+     */
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 
 /**
@@ -53,18 +63,16 @@
  *  返回
  */
 - (IBAction)back:(UIButton *)sender {
+    /**
+     配置文件里设置: View controller-based status bar appearance = NO
+     这样状态栏的颜色就不再是由ViewController处理了, 而是由UIApplication来处理
+     */
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
     
     // 退出键盘
     [self.view endEditing:YES];
     
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-/**
- *  让当前控制器对应的状态栏是白色
- */
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
 }
 
 @end
