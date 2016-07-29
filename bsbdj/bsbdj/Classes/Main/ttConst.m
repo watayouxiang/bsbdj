@@ -31,3 +31,12 @@ NSString * const ttUserSexFemale = @"f";
 
 /** 精华-cell-最热评论标题的高度 */
 CGFloat const ttTopicCellTopCmtTitleH = 20;
+
+/** tabBar被选中的通知名字 */
+NSString * const ttTabBarDidSelectNotification = @"ttTabBarDidSelectNotification";
+/** tabBar被选中的通知 - 被选中的控制器的index key */
+NSString * const ttSelectedControllerIndexKey = @"ttSelectedControllerIndexKey";
+/** tabBar被选中的通知 - 被选中的控制器 key */
+NSString * const ttSelectedControllerKey = @"ttSelectedControllerKey";
+
+

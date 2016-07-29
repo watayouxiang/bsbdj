@@ -31,4 +31,6 @@
 #define ttScreenW [UIScreen mainScreen].bounds.size.width
 #define ttScreenH [UIScreen mainScreen].bounds.size.height
 
+#define ttNoteCenter [NSNotificationCenter defaultCenter]
+
 #endif /* PrefixHeader_pch */

@@ -24,6 +24,8 @@
 @property (nonatomic, copy) NSString *maxtime;
 /** 上一次的请求参数 */
 @property (nonatomic, strong) NSDictionary *params;
+/** 上次选中的索引(或者控制器) */
+@property (nonatomic, assign) NSInteger lastSelectedIndex;
 @end
 
 @implementation ttTopicVc
@@ -64,6 +66,20 @@ static NSString * const ttTopicCellId = @"topic";
     
     // 注册
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ttTopicCell class]) bundle:nil] forCellReuseIdentifier:ttTopicCellId];
+    
+    // 监听tabbar点击的通知
+    [ttNoteCenter addObserver:self selector:@selector(tabBarSelect) name:ttTabBarDidSelectNotification object:nil];
+}
+
+- (void)tabBarSelect {
+    // 如果是连续选中2次, 直接刷新
+    if (self.lastSelectedIndex == self.tabBarController.selectedIndex
+        && self.view.isShowingOnKeyWindow) {
+        [self.tableView.mj_header beginRefreshing];
+    }
+    
+    // 记录这一次选中的索引
+    self.lastSelectedIndex = self.tabBarController.selectedIndex;
 }
 
 #pragma mark - 添加刷新控件
