@@ -6,8 +6,8 @@
 //  Copyright © 2016年 wata. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ttEssenceVc.h"
 
-@interface ttNewVc : UIViewController
+@interface ttNewVc : ttEssenceVc
 
 @end

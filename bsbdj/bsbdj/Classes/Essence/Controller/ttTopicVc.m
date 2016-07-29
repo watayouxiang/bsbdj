@@ -14,6 +14,7 @@
 #import "ttTopic.h"
 #import "ttTopicCell.h"
 #import "ttCommentVc.h"
+#import "ttNewVc.h"
 
 @interface ttTopicVc ()
 /** 帖子数据 */
@@ -106,7 +107,7 @@ static NSString * const ttTopicCellId = @"topic";
     
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = self.a;
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
     self.params = params;
@@ -117,8 +118,8 @@ static NSString * const ttTopicCellId = @"topic";
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (self.params != params) return;
-        ttLog(@"精华---> %@", responseObject);
-        [responseObject writeToFile:@"/Users/TaoWang/Desktop/精华下拉刷新.plist" atomically:YES];
+        //ttLog(@"精华---> %@", responseObject);
+        //[responseObject writeToFile:@"/Users/TaoWang/Desktop/精华下拉刷新.plist" atomically:YES];
         
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
@@ -146,6 +147,15 @@ static NSString * const ttTopicCellId = @"topic";
 }
 
 /**
+ *  a参数
+ */
+- (NSString *)a {
+    NSString *a_param = [self.parentViewController isKindOfClass:[ttNewVc class]] ? @"newlist" : @"list";
+    ttLog(@"a=======%@",a_param);
+    return a_param;
+}
+
+/**
  * 加载更多数据
  */
 - (void)loadMoreTopics {
@@ -154,7 +164,7 @@ static NSString * const ttTopicCellId = @"topic";
     
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = self.a;
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
     NSInteger page = self.page + 1;
@@ -168,8 +178,8 @@ static NSString * const ttTopicCellId = @"topic";
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (self.params != params) return;
-        ttLog(@"精华---> %@", responseObject);
-        [responseObject writeToFile:@"/Users/TaoWang/Desktop/精华加载更多.plist" atomically:YES];
+        //ttLog(@"精华---> %@", responseObject);
+        //[responseObject writeToFile:@"/Users/TaoWang/Desktop/精华加载更多.plist" atomically:YES];
         
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
