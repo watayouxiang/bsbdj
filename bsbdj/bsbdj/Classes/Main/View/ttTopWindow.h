@@ -10,4 +10,5 @@
 
 @interface ttTopWindow : NSObject
 + (void)show;
++ (void)hide;
 @end

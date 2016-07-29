@@ -22,5 +22,9 @@
 @property (nonatomic, assign) CGFloat centerX;
 @property (nonatomic, assign) CGFloat centerY;
 
+/**
+ * 判断一个控件是否真正显示在主窗口
+ */
+- (BOOL)isShowingOnKeyWindow;
 
 @end
