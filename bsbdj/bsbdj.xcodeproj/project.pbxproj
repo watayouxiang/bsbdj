@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		58176602B680B4A609C9ACDF /* libPods-bsbdj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DD8F08FE893BF3F05A8641 /* libPods-bsbdj.a */; };
+		BB0203731D4B4A7F007510B5 /* ttCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0203721D4B4A7F007510B5 /* ttCommentCell.xib */; };
+		BB0203791D4B4EB0007510B5 /* UIImageView+ttExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0203781D4B4EB0007510B5 /* UIImageView+ttExtension.m */; };
+		BB02037C1D4B4EF3007510B5 /* UIImage+ttExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BB02037B1D4B4EF3007510B5 /* UIImage+ttExtension.m */; };
 		BB0538331D40D4C500840432 /* ttLoginRegisterVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0538311D40D4C500840432 /* ttLoginRegisterVc.m */; };
 		BB0538341D40D4C500840432 /* ttLoginRegisterVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0538321D40D4C500840432 /* ttLoginRegisterVc.xib */; };
 		BB0D2A2D1D3F644400C66D3D /* ttGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D2A2C1D3F644400C66D3D /* ttGuideView.m */; };
@@ -19,7 +22,6 @@
 		BB963D331D4AE5F600C71C52 /* ttComment.m in Sources */ = {isa = PBXBuildFile; fileRef = BB963D321D4AE5F600C71C52 /* ttComment.m */; };
 		BB963D361D4AE68E00C71C52 /* ttCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB963D351D4AE68E00C71C52 /* ttCommentHeaderView.m */; };
 		BB963D3A1D4AE85C00C71C52 /* ttCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB963D381D4AE85C00C71C52 /* ttCommentCell.m */; };
-		BB963D3D1D4AE86D00C71C52 /* ttCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB963D3C1D4AE86D00C71C52 /* ttCommentCell.xib */; };
 		BB963D3F1D4AF11100C71C52 /* ttTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB963D3E1D4AF11100C71C52 /* ttTopicCell.xib */; };
 		BB963D421D4B063500C71C52 /* ttTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BB963D411D4B063500C71C52 /* ttTopWindow.m */; };
 		BB98E65D1D3D23CF00683672 /* ttEssenceVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E5ED1D3D23CF00683672 /* ttEssenceVc.m */; };
@@ -69,6 +71,11 @@
 
 /* Begin PBXFileReference section */
 		54DD8F08FE893BF3F05A8641 /* libPods-bsbdj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bsbdj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0203721D4B4A7F007510B5 /* ttCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttCommentCell.xib; sourceTree = "<group>"; };
+		BB0203771D4B4EB0007510B5 /* UIImageView+ttExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ttExtension.h"; sourceTree = "<group>"; };
+		BB0203781D4B4EB0007510B5 /* UIImageView+ttExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ttExtension.m"; sourceTree = "<group>"; };
+		BB02037A1D4B4EF3007510B5 /* UIImage+ttExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ttExtension.h"; sourceTree = "<group>"; };
+		BB02037B1D4B4EF3007510B5 /* UIImage+ttExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ttExtension.m"; sourceTree = "<group>"; };
 		BB0538301D40D4C500840432 /* ttLoginRegisterVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttLoginRegisterVc.h; sourceTree = "<group>"; };
 		BB0538311D40D4C500840432 /* ttLoginRegisterVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttLoginRegisterVc.m; sourceTree = "<group>"; };
 		BB0538321D40D4C500840432 /* ttLoginRegisterVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttLoginRegisterVc.xib; sourceTree = "<group>"; };
@@ -87,7 +94,6 @@
 		BB963D351D4AE68E00C71C52 /* ttCommentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttCommentHeaderView.m; sourceTree = "<group>"; };
 		BB963D371D4AE85C00C71C52 /* ttCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttCommentCell.h; sourceTree = "<group>"; };
 		BB963D381D4AE85C00C71C52 /* ttCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttCommentCell.m; sourceTree = "<group>"; };
-		BB963D3C1D4AE86D00C71C52 /* ttCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttCommentCell.xib; sourceTree = "<group>"; };
 		BB963D3E1D4AF11100C71C52 /* ttTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttTopicCell.xib; sourceTree = "<group>"; };
 		BB963D401D4B063500C71C52 /* ttTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTopWindow.h; sourceTree = "<group>"; };
 		BB963D411D4B063500C71C52 /* ttTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTopWindow.m; sourceTree = "<group>"; };
@@ -320,6 +326,10 @@
 				BB98E6451D3D23CF00683672 /* UIView+ttExtension.m */,
 				BBE210561D45EF8E00A39858 /* NSDate+ttExtension.h */,
 				BBE210571D45EF8E00A39858 /* NSDate+ttExtension.m */,
+				BB0203771D4B4EB0007510B5 /* UIImageView+ttExtension.h */,
+				BB0203781D4B4EB0007510B5 /* UIImageView+ttExtension.m */,
+				BB02037A1D4B4EF3007510B5 /* UIImage+ttExtension.h */,
+				BB02037B1D4B4EF3007510B5 /* UIImage+ttExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -503,7 +513,7 @@
 				BB963D351D4AE68E00C71C52 /* ttCommentHeaderView.m */,
 				BB963D371D4AE85C00C71C52 /* ttCommentCell.h */,
 				BB963D381D4AE85C00C71C52 /* ttCommentCell.m */,
-				BB963D3C1D4AE86D00C71C52 /* ttCommentCell.xib */,
+				BB0203721D4B4A7F007510B5 /* ttCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -574,7 +584,7 @@
 				BB0D2A311D3F647500C66D3D /* ttGuideView.xib in Resources */,
 				BBC9D0CD1D4849F700691628 /* ttPublishView.xib in Resources */,
 				BBC9D0D51D48825C00691628 /* ttTopicVoiceView.xib in Resources */,
-				BB963D3D1D4AE86D00C71C52 /* ttCommentCell.xib in Resources */,
+				BB0203731D4B4A7F007510B5 /* ttCommentCell.xib in Resources */,
 				BB963D261D4AE31F00C71C52 /* Assets.xcassets in Resources */,
 				BB98E6651D3D23CF00683672 /* ttRecommendCategoryCell.xib in Resources */,
 				BB98E65F1D3D23CF00683672 /* ttFriendTrendsVc.xib in Resources */,
@@ -651,6 +661,7 @@
 				BB0538331D40D4C500840432 /* ttLoginRegisterVc.m in Sources */,
 				BB98E6661D3D23CF00683672 /* ttRecommendUserCell.m in Sources */,
 				BB98E68A1D3D23CF00683672 /* ttNewVc.m in Sources */,
+				BB02037C1D4B4EF3007510B5 /* UIImage+ttExtension.m in Sources */,
 				BBE210381D45E44D00A39858 /* ttRecommendTag.m in Sources */,
 				BBC9D0D41D48825C00691628 /* ttTopicVoiceView.m in Sources */,
 				BB963D331D4AE5F600C71C52 /* ttComment.m in Sources */,
@@ -682,6 +693,7 @@
 				BB98E6861D3D23CF00683672 /* ttTabBarController.m in Sources */,
 				BBE210671D4603EB00A39858 /* ttShowPictureVc.m in Sources */,
 				BBE210441D45E56F00A39858 /* ttTopicVc.m in Sources */,
+				BB0203791D4B4EB0007510B5 /* UIImageView+ttExtension.m in Sources */,
 				BB963D301D4AE5E100C71C52 /* ttUser.m in Sources */,
 				BBE2107A1D461A4C00A39858 /* ttPublishView.m in Sources */,
 				BB98E65D1D3D23CF00683672 /* ttEssenceVc.m in Sources */,

@@ -12,6 +12,8 @@
 #import "UIView+ttExtension.h"
 #import "UIBarButtonItem+ttExtension.h"
 #import "NSDate+ttExtension.h"
+#import "UIImage+ttExtension.h"
+#import "UIImageView+ttExtension.h"
 #import "ttConst.h"
 
 #ifdef DEBUG

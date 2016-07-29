@@ -37,7 +37,7 @@
 - (void)setComment:(ttComment *)comment {
     _comment = comment;
     
-    [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:comment.user.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.profileImageView setHeader:comment.user.profile_image];
     self.sexView.image = [comment.user.sex isEqualToString:ttUserSexMale] ? [UIImage imageNamed:@"Profile_manIcon"] : [UIImage imageNamed:@"Profile_womanIcon"];
     self.contentLabel.text = comment.content;
     self.usernameLabel.text = comment.user.username;
@@ -56,6 +56,15 @@
     frame.size.width -= 2 * ttTopicCellMargin;
     
     [super setFrame:frame];
+}
+
+#pragma mark - MenuItem使用
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+    return NO;
 }
 
 @end

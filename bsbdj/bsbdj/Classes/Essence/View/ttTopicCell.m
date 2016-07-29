@@ -98,7 +98,7 @@
     self.sinaVView.hidden = !topic.isSina_v;
     
     // 设置头像
-    [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.profileImageView setHeader:topic.profile_image];
     
     // 设置名字
     self.nameLabel.text = topic.name;

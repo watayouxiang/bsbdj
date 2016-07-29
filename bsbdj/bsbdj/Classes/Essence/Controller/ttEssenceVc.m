@@ -139,15 +139,15 @@
 #pragma mark - 初始化子控制器
 - (void)setupChildVces
 {
-    ttTopicVc *picture = [[ttTopicVc alloc] init];
-    picture.title = @"图片";
-    picture.type = ttTopicTypePicture;
-    [self addChildViewController:picture];
-    
     ttTopicVc *word = [[ttTopicVc alloc] init];
     word.title = @"段子";
     word.type = ttTopicTypeWord;
     [self addChildViewController:word];
+    
+    ttTopicVc *picture = [[ttTopicVc alloc] init];
+    picture.title = @"图片";
+    picture.type = ttTopicTypePicture;
+    [self addChildViewController:picture];
     
     ttTopicVc *all = [[ttTopicVc alloc] init];
     all.title = @"全部";
