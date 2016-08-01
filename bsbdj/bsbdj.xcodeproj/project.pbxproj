@@ -47,6 +47,12 @@
 		BB98E6F51D3E1A4200683672 /* ttRecommendTagsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E6F41D3E1A4200683672 /* ttRecommendTagsVc.m */; };
 		BBB86F291D41F5B300C8DA3A /* ttVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */; };
 		BBB86F2C1D41F6DD00C8DA3A /* ttTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */; };
+		BBB929F21D4ED97100C779F4 /* ttMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB929F11D4ED97100C779F4 /* ttMeCell.m */; };
+		BBB929F51D4EDCC400C779F4 /* ttMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB929F41D4EDCC400C779F4 /* ttMeFooterView.m */; };
+		BBB929FC1D4EDD6200C779F4 /* ttSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB929FB1D4EDD6200C779F4 /* ttSquare.m */; };
+		BBB92A031D4EDDE900C779F4 /* ttSqaureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB92A021D4EDDE900C779F4 /* ttSqaureButton.m */; };
+		BBB92A061D4EDF7D00C779F4 /* ttWebVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB92A051D4EDF7D00C779F4 /* ttWebVc.m */; };
+		BBB92A081D4EE12100C779F4 /* ttWebVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBB92A071D4EE12100C779F4 /* ttWebVc.xib */; };
 		BBC134F01D3B5565007C052B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC134EF1D3B5565007C052B /* main.m */; };
 		BBC9D0CD1D4849F700691628 /* ttPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC9D0CC1D4849F700691628 /* ttPublishView.xib */; };
 		BBC9D0D41D48825C00691628 /* ttTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC9D0CF1D48825C00691628 /* ttTopicVoiceView.m */; };
@@ -140,6 +146,17 @@
 		BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttVerticalButton.m; sourceTree = "<group>"; };
 		BBB86F2A1D41F6DD00C8DA3A /* ttTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTextField.h; sourceTree = "<group>"; };
 		BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTextField.m; sourceTree = "<group>"; };
+		BBB929F01D4ED97100C779F4 /* ttMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttMeCell.h; sourceTree = "<group>"; };
+		BBB929F11D4ED97100C779F4 /* ttMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttMeCell.m; sourceTree = "<group>"; };
+		BBB929F31D4EDCC400C779F4 /* ttMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttMeFooterView.h; sourceTree = "<group>"; };
+		BBB929F41D4EDCC400C779F4 /* ttMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttMeFooterView.m; sourceTree = "<group>"; };
+		BBB929FA1D4EDD6200C779F4 /* ttSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttSquare.h; sourceTree = "<group>"; };
+		BBB929FB1D4EDD6200C779F4 /* ttSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttSquare.m; sourceTree = "<group>"; };
+		BBB92A011D4EDDE900C779F4 /* ttSqaureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttSqaureButton.h; sourceTree = "<group>"; };
+		BBB92A021D4EDDE900C779F4 /* ttSqaureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttSqaureButton.m; sourceTree = "<group>"; };
+		BBB92A041D4EDF7D00C779F4 /* ttWebVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttWebVc.h; sourceTree = "<group>"; };
+		BBB92A051D4EDF7D00C779F4 /* ttWebVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttWebVc.m; sourceTree = "<group>"; };
+		BBB92A071D4EE12100C779F4 /* ttWebVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttWebVc.xib; sourceTree = "<group>"; };
 		BBC134EB1D3B5565007C052B /* bsbdj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bsbdj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC134EF1D3B5565007C052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBC134FF1D3B5565007C052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -372,8 +389,8 @@
 		BB98E6511D3D23CF00683672 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				BBB929F91D4EDD6200C779F4 /* Model */,
 				BB98E6521D3D23CF00683672 /* Controller */,
-				BB98E6551D3D23CF00683672 /* Model */,
 				BB98E6561D3D23CF00683672 /* View */,
 			);
 			path = Me;
@@ -384,20 +401,22 @@
 			children = (
 				BB98E6531D3D23CF00683672 /* ttMeVc.h */,
 				BB98E6541D3D23CF00683672 /* ttMeVc.m */,
+				BBB92A041D4EDF7D00C779F4 /* ttWebVc.h */,
+				BBB92A051D4EDF7D00C779F4 /* ttWebVc.m */,
+				BBB92A071D4EE12100C779F4 /* ttWebVc.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		BB98E6551D3D23CF00683672 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		BB98E6561D3D23CF00683672 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BBB929F01D4ED97100C779F4 /* ttMeCell.h */,
+				BBB929F11D4ED97100C779F4 /* ttMeCell.m */,
+				BBB929F31D4EDCC400C779F4 /* ttMeFooterView.h */,
+				BBB929F41D4EDCC400C779F4 /* ttMeFooterView.m */,
+				BBB92A011D4EDDE900C779F4 /* ttSqaureButton.h */,
+				BBB92A021D4EDDE900C779F4 /* ttSqaureButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -434,6 +453,16 @@
 			);
 			path = View;
 			sourceTree = "<group>";
+		};
+		BBB929F91D4EDD6200C779F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBB929FA1D4EDD6200C779F4 /* ttSquare.h */,
+				BBB929FB1D4EDD6200C779F4 /* ttSquare.m */,
+			);
+			name = Model;
+			path = bsbdj/Classes/Me/Model;
+			sourceTree = SOURCE_ROOT;
 		};
 		BBC134E21D3B5565007C052B = {
 			isa = PBXGroup;
@@ -587,6 +616,7 @@
 				BB0203731D4B4A7F007510B5 /* ttCommentCell.xib in Resources */,
 				BB963D261D4AE31F00C71C52 /* Assets.xcassets in Resources */,
 				BB98E6651D3D23CF00683672 /* ttRecommendCategoryCell.xib in Resources */,
+				BBB92A081D4EE12100C779F4 /* ttWebVc.xib in Resources */,
 				BB98E65F1D3D23CF00683672 /* ttFriendTrendsVc.xib in Resources */,
 				BB98E6611D3D23CF00683672 /* ttRecommendVc.xib in Resources */,
 				BBE210741D46058700A39858 /* ttTopicPictureView.xib in Resources */,
@@ -665,15 +695,20 @@
 				BBE210381D45E44D00A39858 /* ttRecommendTag.m in Sources */,
 				BBC9D0D41D48825C00691628 /* ttTopicVoiceView.m in Sources */,
 				BB963D331D4AE5F600C71C52 /* ttComment.m in Sources */,
+				BBB929F21D4ED97100C779F4 /* ttMeCell.m in Sources */,
 				BB98E6891D3D23CF00683672 /* ttMeVc.m in Sources */,
 				BBE210481D45E58F00A39858 /* ttTopicCell.m in Sources */,
 				BB98E6F51D3E1A4200683672 /* ttRecommendTagsVc.m in Sources */,
 				BB98E6631D3D23CF00683672 /* ttRecommendUser.m in Sources */,
+				BBB929FC1D4EDD6200C779F4 /* ttSquare.m in Sources */,
 				BBC9D0D61D48825C00691628 /* ttTopicVideoView.m in Sources */,
+				BBB929F51D4EDCC400C779F4 /* ttMeFooterView.m in Sources */,
 				BB0D2A2D1D3F644400C66D3D /* ttGuideView.m in Sources */,
 				BB98E6601D3D23CF00683672 /* ttRecommendVc.m in Sources */,
+				BBB92A061D4EDF7D00C779F4 /* ttWebVc.m in Sources */,
 				BB963D2A1D4AE53C00C71C52 /* ttCommentVc.m in Sources */,
 				BBE210581D45EF8E00A39858 /* NSDate+ttExtension.m in Sources */,
+				BBB92A031D4EDDE900C779F4 /* ttSqaureButton.m in Sources */,
 				BB98E6851D3D23CF00683672 /* ttNavigationController.m in Sources */,
 				BBC134F01D3B5565007C052B /* main.m in Sources */,
 				BB98E68D1D3D24BF00683672 /* AppDelegate.m in Sources */,
