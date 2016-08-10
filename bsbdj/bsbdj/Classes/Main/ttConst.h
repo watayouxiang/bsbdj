@@ -47,4 +47,9 @@ UIKIT_EXTERN NSString * const ttSelectedControllerIndexKey;
 /** tabBar被选中的通知 - 被选中的控制器 key */
 UIKIT_EXTERN NSString * const ttSelectedControllerKey;
 
+/** 标签-间距 */
+UIKIT_EXTERN CGFloat const ttTagMargin;
+/** 标签-高度 */
+UIKIT_EXTERN CGFloat const ttTagH;
+
 

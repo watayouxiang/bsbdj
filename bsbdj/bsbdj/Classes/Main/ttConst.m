@@ -39,4 +39,10 @@ NSString * const ttSelectedControllerIndexKey = @"ttSelectedControllerIndexKey";
 /** tabBar被选中的通知 - 被选中的控制器 key */
 NSString * const ttSelectedControllerKey = @"ttSelectedControllerKey";
 
+/** 标签-间距 */
+CGFloat const ttTagMargin = 5;
+/** 标签-高度 */
+CGFloat const ttTagH = 25;
+
+
 

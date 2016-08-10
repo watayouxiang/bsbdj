@@ -26,5 +26,6 @@
  * 判断一个控件是否真正显示在主窗口
  */
 - (BOOL)isShowingOnKeyWindow;
++ (instancetype)viewFromXib;
 
 @end

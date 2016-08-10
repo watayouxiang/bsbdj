@@ -8,6 +8,8 @@
 
 #import "ttPublishView.h"
 #import "ttVerticalButton.h"
+#import "ttPostWordVc.h"
+#import "ttNavigationController.h"
 #import <POP.h>
 
 static CGFloat const ttAnimationDelay = 0.1;
@@ -92,6 +94,8 @@ static UIWindow *window_;
     CGFloat centerX = ttScreenW * 0.5;
     CGFloat centerEndY = ttScreenH * 0.2;
     CGFloat centerBeginY = centerEndY - ttScreenH;
+    sloganView.centerY = centerBeginY;
+    sloganView.centerX = centerX;
     anim.fromValue = [NSValue valueWithCGPoint:CGPointMake(centerX, centerBeginY)];
     anim.toValue = [NSValue valueWithCGPoint:CGPointMake(centerX, centerEndY)];
     anim.beginTime = CACurrentMediaTime() + images.count * ttAnimationDelay;
@@ -112,6 +116,11 @@ static UIWindow *window_;
             ttLog(@"发图片");
         } else if (button.tag == 2) {
             ttLog(@"发段子");
+            ttPostWordVc *postWordVc = [[ttPostWordVc alloc] init];
+            ttNavigationController *nav = [[ttNavigationController alloc] initWithRootViewController:postWordVc];
+            UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
+            [root presentViewController:nav animated:YES completion:nil];
+            
         } else if (button.tag == 3) {
             ttLog(@"发声音");
         } else if (button.tag == 4) {
