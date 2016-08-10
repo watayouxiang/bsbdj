@@ -9,6 +9,7 @@
 #import "ttMeVc.h"
 #import "ttMeCell.h"
 #import "ttMeFooterView.h"
+#import "ttSettingVc.h"
 
 @interface ttMeVc ()
 
@@ -59,7 +60,7 @@ static NSString *ttMeId = @"me";
 }
 
 -(void)settingClick{
-    ttLogFunc;
+    [self.navigationController pushViewController:[[ttSettingVc alloc] initWithStyle:UITableViewStyleGrouped] animated:YES];
 }
 
 -(void)moonClick{

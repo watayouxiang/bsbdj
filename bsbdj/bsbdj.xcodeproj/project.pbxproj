@@ -45,6 +45,7 @@
 		BB98E68A1D3D23CF00683672 /* ttNewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E65A1D3D23CF00683672 /* ttNewVc.m */; };
 		BB98E68D1D3D24BF00683672 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E68C1D3D24BF00683672 /* AppDelegate.m */; };
 		BB98E6F51D3E1A4200683672 /* ttRecommendTagsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BB98E6F41D3E1A4200683672 /* ttRecommendTagsVc.m */; };
+		BBAABADE1D5ABDE9008CFACA /* ttSettingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAABADD1D5ABDE9008CFACA /* ttSettingVc.m */; };
 		BBB86F291D41F5B300C8DA3A /* ttVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */; };
 		BBB86F2C1D41F6DD00C8DA3A /* ttTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB86F2B1D41F6DD00C8DA3A /* ttTextField.m */; };
 		BBB929F21D4ED97100C779F4 /* ttMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB929F11D4ED97100C779F4 /* ttMeCell.m */; };
@@ -149,6 +150,8 @@
 		BB98E6F31D3E1A4200683672 /* ttRecommendTagsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttRecommendTagsVc.h; sourceTree = "<group>"; };
 		BB98E6F41D3E1A4200683672 /* ttRecommendTagsVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttRecommendTagsVc.m; sourceTree = "<group>"; };
 		BBA55477C782EBFCF4AC5720 /* Pods-bsbdj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bsbdj.release.xcconfig"; path = "Pods/Target Support Files/Pods-bsbdj/Pods-bsbdj.release.xcconfig"; sourceTree = "<group>"; };
+		BBAABADC1D5ABDE9008CFACA /* ttSettingVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttSettingVc.h; sourceTree = "<group>"; };
+		BBAABADD1D5ABDE9008CFACA /* ttSettingVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttSettingVc.m; sourceTree = "<group>"; };
 		BBB86F271D41F5B300C8DA3A /* ttVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttVerticalButton.h; sourceTree = "<group>"; };
 		BBB86F281D41F5B300C8DA3A /* ttVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttVerticalButton.m; sourceTree = "<group>"; };
 		BBB86F2A1D41F6DD00C8DA3A /* ttTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTextField.h; sourceTree = "<group>"; };
@@ -422,6 +425,8 @@
 				BBB92A041D4EDF7D00C779F4 /* ttWebVc.h */,
 				BBB92A051D4EDF7D00C779F4 /* ttWebVc.m */,
 				BBB92A071D4EE12100C779F4 /* ttWebVc.xib */,
+				BBAABADC1D5ABDE9008CFACA /* ttSettingVc.h */,
+				BBAABADD1D5ABDE9008CFACA /* ttSettingVc.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -747,6 +752,7 @@
 				BBDDF8061D5984BB006AD1BC /* ttPostWordVc.m in Sources */,
 				BB98E65E1D3D23CF00683672 /* ttFriendTrendsVc.m in Sources */,
 				BBE2104C1D45E60F00A39858 /* ttTopic.m in Sources */,
+				BBAABADE1D5ABDE9008CFACA /* ttSettingVc.m in Sources */,
 				BB0538331D40D4C500840432 /* ttLoginRegisterVc.m in Sources */,
 				BB98E6661D3D23CF00683672 /* ttRecommendUserCell.m in Sources */,
 				BBDDF80C1D59B6DB006AD1BC /* ttAddTagToolbar.m in Sources */,
